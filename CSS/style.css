@@ -1,0 +1,695 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+h1{
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    
+ }
+ 
+ h2{
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 43px;
+    font-weight: 700;
+     
+ }
+ 
+ h3{
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    line-height: 33px;
+ }
+ 
+ h4{
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+ }
+
+ p{
+    margin: 0;
+    font-size: 21px;
+    font-family: 'Lato', sans-serif;
+ }
+
+ .p2{
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+ }
+
+/* Navigation Bar*/
+
+ header{
+    
+    background-color: rgba(2, 14, 39, 0.6);;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    z-index: 1;
+    
+    
+}
+
+
+ul.nav{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    
+}
+
+li.nav{
+    float: left;
+}
+
+li.nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20.5px 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.proj {
+    overflow: hidden;
+  }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.proj:hover .dropdown-content {
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+
+.heroImg{
+    justify-content: center;
+    display: flex;
+    height: 900px;
+    width: 100%;
+    background-image:linear-gradient(180deg, #2B4972 0%, #9ABCEA 100%);
+}
+
+    
+
+.content{
+    margin-top: 221px;
+    width: 500px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+
+}
+
+
+.title{
+    margin-top: 103px;
+    
+}
+
+.objective{
+    margin-top: 30px;
+}
+
+.heroButton{
+    margin-top: 175px;
+    ;
+    
+   
+}
+
+.projectButton a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* Skills Section */
+
+.mySkills{
+    background-color: #344465;
+    color: white;
+}
+
+.skills{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.flexContainer1{
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.flexContainer2{
+    margin-top: 82px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 160px;
+}
+
+.flexChild{
+    width: 513px;
+    margin-left: 69px;
+    margin-right: 69px;
+}
+
+.skillDescription{
+    margin-top: 30px;
+}
+
+
+/* Projects Section */
+
+.projectButton{
+    background-image: linear-gradient(180deg, #1A3F8E 0%, #0B255B 100%);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 16px 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+   
+}
+
+.projectButton:hover {
+    
+    color: #F2D579;
+}
+
+.projectName{
+    font-weight: 600;
+}
+
+.myProjects{
+    background-color: #9ABCEA;
+    height: 2005px;
+}
+
+.projects{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.projectCards-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.projectCard{
+    display: flex;
+    height: 454px;
+    width: 1164px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.projectInfo{
+    margin-top: 72px;
+    height: 311px;
+    width: 452px;
+}
+
+    /* HBO Max */
+
+.hboCard{
+    background-color: #F2EEFF;
+}
+
+.hboInfo{
+    margin-left: 70px;
+}
+
+
+
+.hboIMG{
+    margin-left: 70px;
+    margin-top: 87px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4));
+    
+}
+
+
+.hboDescription{
+    margin-top: 29px;
+}
+
+.hboButton{
+    margin-top: 49px;
+}
+
+    /* WRCNU */
+
+.wrcnuCard{
+    background-color: #E4F0FC;
+}
+
+.wrcnuInfo{
+    margin-left: 118px;
+}
+
+.wrcnuHeader{
+    width: 481px;
+}
+
+.wrcnuIMG{
+    margin-left: 89px;
+    margin-top: 37px;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
+}
+
+.wrcnuDescription{
+    margin-top: 20px;
+}
+
+.wrcnuButton{
+    margin-top: 32px;
+}
+
+    /* Moab Music Festival */
+
+.moabCard{
+    background-color: #F1E1DC;
+}
+
+.moabInfo{
+    margin-left: 70px;
+}
+
+.moabDescription{
+    margin-top: 20px;
+}
+
+.moabButton{
+    margin-top: 32px;
+}
+
+.moabIMG{
+    margin-left: 62px;
+    margin-top: 75px;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, .5));
+}
+/* Footer & Contact */
+
+
+footer{
+    background-color: #344465;
+    color: white;
+    text-align: center;
+    bottom: 100px;
+    height: 370px;
+}
+
+.collaborate{
+    font-weight: 600;
+}
+
+.contact{
+    padding-top: 46px;
+}
+
+.questions{
+    margin-top: 21px;
+}
+
+
+.footer-iconsContainer{
+    margin-top: 78px;
+}
+
+
+.footer-icons{
+    padding: 0px;
+    display: inline-block;
+   
+}
+
+.mail{
+    margin-right: 50px;
+}
+
+
+.copyright{
+    margin-top: 66px;
+}
+
+
+
+
+/* ------------- HBO CASE STUDY ------------ */
+
+/*-- CASE STUDY COMPONENTS --*/
+
+.stageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stageTitle{
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: #C4C4C4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stageContent{
+    width: 100%;
+    max-width: 1164px;
+}
+
+
+.sectionTitle{
+    margin-top: 50px;
+}
+
+.descriptionHeading{
+    margin-top: 50px;
+}
+
+.sectionDescription{
+    margin-top: 25px;
+}
+
+.imgTitle{
+    margin-top: 50px;
+}
+
+.sectionIMG{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 50px;
+}
+
+.sectionIMGwTitle{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 25px;
+}
+
+.designComparison{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.comparedElement{
+    width: 48%;
+    text-align: center;
+}
+
+.listDescription{
+    margin-top: 50px;
+    line-height: 25px;
+}
+
+ul.sectionList{
+    list-style-type: disc;
+    padding-left: 64px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+li.list{
+    line-height: 50px;
+    padding-left: 23px;
+    
+}
+
+.rectangleDivider{
+    margin-top: 50px;
+    height: 2px;
+    width: 1164px;
+    background-color: #C4C4C4;
+}
+
+
+/* -- CUSTOM COMPONENTS --*/
+
+
+/* PROJECT OVERVIEW */
+
+.hbo-projecOverview{
+    height: 1079px;
+    background-color: #F2EEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hbo-overviewTop{
+    display: flex;
+    padding-top: 198px;
+    max-width: 1164px;
+   
+
+}
+
+.hbo-overviewTopLeft{
+    width: 40.4%;
+    min-width: 351px;
+    
+}
+
+.hbo-overviewTitle{
+    line-height: 52px;
+}
+
+.hbo-productDescription{
+    margin-top: 22px;
+}
+
+.hbo-overviewTopRight{
+    max-width: 500px;
+    margin-left: 16.67%;
+}
+
+.hbo-overviewIMG{
+    width: 100%;
+}
+
+.hbo-overviewBottom{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hbo-projectDescription{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    max-width: 1164px;
+    justify-content: space-between;
+    
+}
+
+.hboRole{
+    width: 22.34%;
+}
+
+.hbo-roleDescription{
+    margin-top: 22px;
+
+}
+
+.hboTeam{
+    width: 22.34%;
+}
+.hbo-teamDescription{
+    margin-top: 22px;
+}
+
+.hbo-toolsDescription{
+    margin-top: 22px;
+    margin-right: 102px;
+}
+
+/* -- Problem and Proposed Solution -- */
+
+.problemSolution{
+    
+    background-color: #2E215A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theProblem{
+    width: 100%;
+    max-width: 1164px;
+    padding-top: 75px;
+}
+
+.problemDescription{
+    margin-top: 25px;
+}
+
+.theSolution{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 50px;
+}
+
+.solutionDescription{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+
+
+
+/* -- USER RESEARCH --*/
+/* User Quotes */
+
+.quotes{
+    margin-top: 25px;
+}
+
+
+/* -- DEFINITION & IDEATION -- */
+/* Problem Statement */
+
+.problemStatement{
+    margin-top: 50px;
+}
+
+
+/* Feature Prioritization Matrix */
+
+.matrixDescription{
+    margin-top: 50px
+}
+
+
+/* -- DESIGN & PROTOTYPE --/
+/* Proposed User Flow */
+
+.featuresDescription{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+
+
+/* -- Testing & Iteration --/
+/* Usability Testing*/
+
+.testingIMGs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.testIMGLeft{
+    width: 44.6%;
+}
+
+.testIMGRight{
+    width: 51.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testIMG{
+    width: 100%;
+    max-width: 1164px;
+}
+
+
+/* Usability Testing*/
+
+.feedbackList{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+
+/* Iterations*/
+
+.iterationsList{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+/* Reflections & Next Steps */
+
+.reflection-stageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}

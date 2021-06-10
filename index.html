@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <ul class = "nav">
+            <li class = "nav"><a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a></li>
+            <li class = "nav" style = float:right><a href = "#about">About</a></li>
+            <li class = "nav" style = float:right><a href = "#resume">Resume</a></li>
+            <li class = "nav" style = float:right><a href = "#projects">Projects</a></li>
+
+            
+            
+        </ul>
+    </header>
+
+  
+   
+
+    <section class = "heroImg">
+        <div class = "content">
+            <h1 class = "intro">Hi, I'm Lucas!</h1>
+            <h3 class = "title">UX Research and Design</h3>
+            <h4 class = "objective">
+                Applying a human-centered approach to design.
+                <br> 
+                Crafting solutions based on evidence.
+            </h4>
+
+            <button onclick = "scrollProjects()" class = "heroButton projectButton">View Projects</button>
+            
+        </div>
+    </section>
+
+
+    <section class = "mySkills">
+        <h2 class = "skills">Skills</h2>
+
+        <div class = "flexContainer1">
+            <div class = "flexChild">
+                <h3>User Research</h3>
+                <p class = "skillDescription">Discover motivations, behaviors, and pain points through interviews, surveys, and analyses.</p>
+            </div>
+            <div class = "flexChild">
+                <h3>User Interface Design</h3>
+                <p class = "skillDescription">Implement ideas from paper and pencil sketches to high-fidelity wireframes and testable prototypes.</p>
+            </div>
+        </div>
+
+        <div class = "flexContainer2">
+            <div class = "flexChild">
+                <h3>Testing</h3>
+                <p class = "skillDescription">Challenge proposed design solutions through usability, A/B, and multivariate testing.</p>
+            </div>
+            <div class = "flexChild">
+                <h3>Front-End Knowledge</h3>
+                <p class = "skillDescription">Apply knowledge of html, css, and javascript to improve communication and understand developer challenges.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class = "myProjects" id = "projectsSection">
+        <h2 class = "projects">Projects</h2>
+        
+        <div class = "projectCards-Container"> 
+
+            <div class = "projectCard hboCard">
+                <div class = "projectInfo hboInfo">
+                    <h2 class = "projectName">HBO Max</h2>
+                    <h3 class = "userFlow">User Flow Redesign</h3>
+                    <p class = "hboDescription">The goal was to improve the user flow for viewers by affording them access to related episodes of a TV show after having selected a show to watch under “Continue Watching”.</p>
+                    <a href = "/UX_UI_Portfolio/hboCaseStudy.html"><button class = "projectButton hboButton">View Project</button></a>
+                </div>
+                <div class = "img hboIMG"> 
+                    <img class = "hbo-img" src = "/UX_UI_Portfolio/Images/hbo_max.png" width = 495px>
+                </div>
+            </div>
+
+            <div class = "projectCard wrcnuCard">
+                <div class = "img wrcnuIMG"> 
+                    <img class = "wrcnu-img" src = "/UX_UI_Portfolio/Images/wrcnu.png" width = 390px>
+                </div>
+                <div class = "projectInfo wrcnuInfo">
+                    <h2 class = "projectName wrcnuHeader">Wildlife Rehabilitation Center</h2>
+                    <h3 class = "mobileRedesign">Mobile Website Redesign</h3>
+                    <p class = "wrcnuDescription">Our aim was to redesign the mobile website so individuals could gain quick access to the information they need to judge whether a wild animal needs aid, and if so, how to provide said aid and/or find help.</p>
+                    <button class = "projectButton wrcnuButton">View Project</button>
+                </div>
+            </div>
+
+            <div class = "projectCard moabCard">
+                <div class = "projectInfo moabInfo">
+                    <h2 class = "projectName">Moab Music Festival</h2>
+                    <h3 class = "navRedesign">Navigation and Layout Redesign</h3>
+                    <p class = "moabDescription">Our objective was to redesign the homepage layout and improve the navigation on both mobile and desktop website for the purpose of making information easier to access and to entice concert goers to buy tickets.</p>
+                    <button class = "projectButton moabButton">View Project</button>
+                </div>
+                <div class = "img moabIMG"> 
+                    <div> <img src = "/UX_UI_Portfolio/Images/moab_music_festival.png" width = 510px> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+           
+        
+    <footer>
+        <div class = "contact">
+            <h2 class = "collaborate">Let's Collaborate!</h2>
+            <h4 class = "questions">Have questions? Feel free to reach out!</h4>
+        </div>
+        
+        
+        <div class = "footer-iconsContainer">
+            <div class = "footer-icons">
+                <a href = "#mail"><img class = "mail" src="/UX_UI_Portfolio/Icons/mail.png" width = 60px></a>
+            </div>
+            <div class = "footer-icons">
+                <a href = "#linkedin"><img class = "linkedin" src="/UX_UI_Portfolio/Icons/linkedin.png" width = 48px></a>
+            </div>
+        </div>
+
+        <div class = "copyright">
+            <p2>Copyright © 2021 - All Rights Reserved</p2>
+        </div>
+        
+    </footer>
+   
+
+
+
+
+        
+    <script src = "/UX_UI_Portfolio/JavaScript/index.js"></script> 
+
+</body>
+</html>

@@ -44,6 +44,7 @@ h1{
     margin: 0;
     font-size: 21px;
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
  }
 
  .p2{
@@ -51,6 +52,11 @@ h1{
     font-size: 14px;
     font-family: 'Lato', sans-serif;
  }
+
+ strong{
+    font-weight: 00;
+ }
+
 
 /* Navigation Bar*/
 
@@ -143,7 +149,6 @@ display: block;
 .heroImg{
     justify-content: center;
     display: flex;
-
     width: 100%;
     background-image:linear-gradient(180deg, #2B4972 0%, #9ABCEA 100%);
 }
@@ -223,8 +228,7 @@ display: block;
 }
 
 .flexChild{
-    max-width: 513px;
-   
+    max-width: 480px;
 }
 
 .skillDescription{
@@ -415,43 +419,8 @@ footer{
 }
 
 
-.copyright{
-    margin-top: 66px;
-}
 
 
-@media (max-width: 740px){
-    .flexContainer1{
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-         
-    }
-
-    .flexContainer2{
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-        text-align: center; 
-        align-items: center; 
-    }
-
-    .flexChild + .flexChild{
-        margin-left: 0px;
-        margin-top: 70px;
-    }
-
-    .flexChild{
-        max-width: 350px;
-    }
-
-    .skillDescription{
-        margin-top: 15px;
-    }
-    
-}
 
 
 /* ------------- HBO CASE STUDY ------------ */

@@ -1,0 +1,95 @@
+/* Fonts */
+
+h1{
+    font-size: 36px;   
+}
+ 
+h2{
+    font-size: 28px;    
+}
+ 
+h3{
+    font-size: 21px;
+}
+ 
+h4{
+    font-size: 16px;
+}
+
+p{
+    font-size: 16px;   
+}
+
+p2{
+    font-size: 12px; 
+}
+
+
+
+
+/* Hero Section */
+
+.content{
+    margin-top: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.title{
+    margin-top: 76px;   
+}
+
+.objective{
+    margin-top: 19px;
+}
+
+.heroButton{
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+}
+
+
+/* Skills Section */
+
+.mySkills{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.skills{
+    padding-top: 75px;
+}
+
+.flexContainer1{
+    margin-top: 53px;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.flexContainer2{
+    margin-top: 53px;
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 120px
+}
+
+.flexChild + .flexChild{
+    margin-left: 0px;
+    margin-top: 53px;
+}
+
+
+.skillDescription{
+    margin-top: 15px;
+}
+
+
+/* Projects Section */
+
+.projectButton{
+    padding: 12px 29px;
+    font-size: 14px;
+}

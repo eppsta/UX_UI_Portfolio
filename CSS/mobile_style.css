@@ -87,9 +87,229 @@ p2{
 }
 
 
+
 /* Projects Section */
 
 .projectButton{
     padding: 12px 29px;
     font-size: 14px;
+
+}
+
+.projectButton:hover {
+    color: #F2D579;
+}
+
+
+.projectName{
+    font-weight: 600;
+}
+
+
+.projects{
+    padding-top: 75px;
+    text-align: center;
+}
+
+.projectCard{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 551px;
+    margin-top: 75px;
+    border-radius: 30px;
+    max-width: 480px;
+   
+    
+     
+}
+
+.projectCards-Container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projectInfo{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+    /* HBO Max */
+
+
+.hboInfo{
+    order: 2;
+    margin-top: auto;
+    margin-bottom: 49px;
+
+    
+}
+
+.hboIMG{
+    display: flex;
+    justify-content: center;
+    width: 78%;
+    margin: auto;
+    margin-top: 58px;
+    margin-bottom: 0px;
+    
+ 
+    
+}
+
+.hbo-img{
+    max-height: 182px;
+    max-width: 322.37px;
+
+    min-height: 122px;
+    min-width: 216px;
+    
+
+
+}
+
+.userFlow{
+    margin-top: -10px;
+}
+
+.hboDescription{
+    margin-top: 20px;
+}
+
+.hboButton{
+    text-align: center;
+    margin-top: 37px;
+
+
+}
+
+    /* WRCNU */
+
+
+
+.wrcnuInfo{
+    order: 2;
+    margin-top: auto;
+    margin-bottom: 49px;
+}
+
+
+.wrcnuIMG{
+    display: flex;
+    justify-content: center;
+    width: 49%;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 0px;
+}
+
+.wrcnu-img{
+    max-height: 196px;
+    max-width: 201.47px;
+
+    min-height: 156px;   
+    min-width: 160.36px;
+
+}
+
+.mobileRedesign{
+    margin-top: -10px;
+}
+
+.wrcnuDescription{
+    margin-top: 20px;
+}
+
+.wrcnuButton{
+    text-align: center;
+    margin-top: 37px;  
+}
+
+    /* Moab Music Festival */
+
+.moabCard{
+    margin-bottom: 150px;
+}
+
+.moabInfo{
+    order: 2;
+    margin-top: auto;
+    margin-bottom: 49px;
+}
+
+.navRedesign{
+    margin-top: -10px;
+}
+
+.moabDescription{
+    margin-top: 20px;
+}
+
+.moabButton{
+    margin-top: 37px;
+    text-align: center;
+}
+
+.moabIMG{
+    display: flex;
+    justify-content: center;
+    width: 68%;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 0px;;
+}
+
+.moab-img{
+    max-height: 188px;
+    max-width: 279.56px;
+    
+    min-height: 148px;   
+    min-width: 220px;
+
+}
+
+
+
+
+/* Footer & Contact */
+
+.collaborate{
+    font-weight: 600;
+}
+
+.contact{
+    padding-top: 35px;
+}
+
+.questions{
+    margin-top: 16px;
+}
+
+
+.footer-iconsContainer{
+    margin-top: 59px;
+}
+
+
+.footer-icons{
+    padding: 0px;
+    display: inline-block;
+   
+}
+
+.mail{
+    margin-right: 37px;
+    width: 45px;
+}
+
+.linkedin{
+    width: 36px;
+}
+
+.copyright{
+    margin-top: 49px;
 }

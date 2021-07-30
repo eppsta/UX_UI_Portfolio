@@ -5,7 +5,10 @@ html{
 body{
     margin: 0;
     padding: 0;
+    height: 100%
 }
+
+
 
 /* Fonts */
 
@@ -180,7 +183,6 @@ display: block;
 .heroButton{
     margin-top: 175px;
     margin-bottom: 146px;
-    ;
     
    
 }
@@ -258,7 +260,6 @@ display: block;
 }
 
 .projectButton:hover {
-    
     color: #F2D579;
 }
 
@@ -268,7 +269,7 @@ display: block;
 
 .myProjects{
     background-color: #9ABCEA;
-    height: 2005px;
+   
 }
 
 .projects{
@@ -280,23 +281,26 @@ display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
 
 .projectCard{
     display: flex;
-    height: 454px;
-    width: 1164px;
     background-color: white;
+    height: 454px;
+    width: 100%;
+    max-width: 1164px;
     margin-top: 100px;
     border-radius: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
     
 }
 
 .projectInfo{
     margin-top: 72px;
-    height: 311px;
     width: 452px;
 }
 
@@ -318,6 +322,12 @@ display: block;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4));
     
 }
+
+.hbo-img{
+    max-width: 495px;
+    width: 100%;
+}
+
 
 
 .hboDescription{
@@ -348,6 +358,11 @@ display: block;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
 }
 
+.wrcnu-img{
+    max-width: 390px;
+    width: 100%;
+}
+
 .wrcnuDescription{
     margin-top: 20px;
 }
@@ -360,10 +375,23 @@ display: block;
 
 .moabCard{
     background-color: #F1E1DC;
+    margin-bottom: 200px;
 }
 
 .moabInfo{
     margin-left: 70px;
+}
+
+.moabHeader{
+    width: 481px;
+}
+
+.moab-subHeader{
+    width: 481px;
+}
+
+.wrcnuHeader{
+    width: 481px;
 }
 
 .moabDescription{
@@ -379,6 +407,16 @@ display: block;
     margin-top: 75px;
     filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, .5));
 }
+
+.moab-img{
+    max-width: 510px;
+    width: 100%;
+}
+
+
+
+
+
 /* Footer & Contact */
 
 
@@ -386,8 +424,6 @@ footer{
     background-color: #344465;
     color: white;
     text-align: center;
-    bottom: 100px;
-    height: 370px;
 }
 
 .collaborate{
@@ -416,6 +452,11 @@ footer{
 
 .mail{
     margin-right: 50px;
+}
+
+.copyright{
+    margin-top: 65px;
+    padding-bottom: 24px;
 }
 
 

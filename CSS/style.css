@@ -288,6 +288,7 @@ display: block;
 
 .projectCard{
     display: flex;
+    justify-content: space-between;
     background-color: white;
     height: 454px;
     width: 100%;
@@ -300,8 +301,11 @@ display: block;
 }
 
 .projectInfo{
-    margin-top: 72px;
-    width: 452px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 481px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
     /* HBO Max */
@@ -311,14 +315,18 @@ display: block;
 }
 
 .hboInfo{
-    margin-left: 70px;
+    margin-right: 0px;
 }
 
 
 
 .hboIMG{
-    margin-left: 70px;
-    margin-top: 87px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4));
     
 }
@@ -345,22 +353,26 @@ display: block;
 }
 
 .wrcnuInfo{
-    margin-left: 118px;
+    margin-left: 0;
+    width: 481px;
+
 }
 
-.wrcnuHeader{
-    width: 481px;
-}
 
 .wrcnuIMG{
-    margin-left: 89px;
-    margin-top: 37px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
 }
 
 .wrcnu-img{
     max-width: 390px;
     width: 100%;
+    
 }
 
 .wrcnuDescription{
@@ -379,20 +391,9 @@ display: block;
 }
 
 .moabInfo{
-    margin-left: 70px;
+    margin-right: 0px;
 }
 
-.moabHeader{
-    width: 481px;
-}
-
-.moab-subHeader{
-    width: 481px;
-}
-
-.wrcnuHeader{
-    width: 481px;
-}
 
 .moabDescription{
     margin-top: 20px;
@@ -403,8 +404,13 @@ display: block;
 }
 
 .moabIMG{
-    margin-left: 62px;
-    margin-top: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
     filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, .5));
 }
 

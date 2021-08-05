@@ -156,8 +156,9 @@ p2{
     margin: auto;
     margin-top: 58px;
     margin-bottom: 0px;
+    padding: 0px;
     
- 
+
     
 }
 
@@ -205,6 +206,7 @@ p2{
     margin: auto;
     margin-top: 39px;
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 .wrcnu-img{
@@ -215,6 +217,11 @@ p2{
     min-width: 160.36px;
 
 }
+
+.wrcnuHeader{
+    width: 265px;
+}
+
 
 .mobileRedesign{
     margin-top: -10px;
@@ -241,8 +248,13 @@ p2{
     margin-bottom: 49px;
 }
 
+.moabHeader{
+    width: 255px;
+}
+
 .navRedesign{
     margin-top: -10px;
+    width: 255px;
 }
 
 .moabDescription{
@@ -260,7 +272,8 @@ p2{
     width: 68%;
     margin: auto;
     margin-top: 43px;
-    margin-bottom: 0px;;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .moab-img{

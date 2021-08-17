@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
@@ -12,25 +14,37 @@
 
 <body>
     <header>
-        <ul class = "nav">
-            <li class = "nav"><a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a></li>
-            <li class = "nav" style = float:right><a href = "#about">About</a></li>
-            <li class = "nav" style = float:right><a href = "#resume">Resume</a></li>
-            
-            <li class = "nav proj" style = float:right>
-                <a href = "#projects">Projects</a>
-
-                <div class="dropdown-content">
-                    <a href="#">HBO Max</a>
-                    <a href="#">Wildlife Rehab Center</a>
-                    <a href="#">Moab Music Festival</a>
+        <nav class = "flexnav">
+            <div class = "menuItems">
+                <div class = "logoHome">
+                    <a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
                 </div>
 
+                <div class = "navIcon">
+                    <a href = "#fa-bars"><i class="fa fa-bars" style="font-size: 32px"></i></a>
+                </div>
+                
+                <div class = "navMenu">
+                    <div class = "navItem proj"><a href = "#projects" class = "proj">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="/UX_UI_Portfolio/hboCaseStudy.html">HBO Max</a>
+                            <a href="#">Wildlife Rehab Center</a>
+                            <a href="#">Moab Music Festival</a>
+                        </div>
+                    </div>
 
-            </li>
-            
+                    <div class = "navItem"><a href = "#resume">Resume</a></div> 
+                    <div class = "navItem"><a href = "#about">About</a></div>
+                    
+                </div>
+                
+                
+                
 
-        </ul>
+            </div>
+                     
+
+        </nav>
 
     </header>
 

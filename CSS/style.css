@@ -97,18 +97,26 @@ h1{
     align-items: center; 
 }
 
-.menuItems a{
+
+.logoHome a{
     color: white;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     padding: 20.5px 20px;
-
 }
 
 
+.navItem a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding: 20.5px 20px;
 }
+
+
+
 .navMenu{
-    display: flex;   
+    display: flex;  
 }
 
 
@@ -130,7 +138,7 @@ h1{
     flex-direction: column;
     margin-top: 20px;
     position: absolute;
-    background-color: rgba(2, 14, 39, 0.7);
+    background-color: rgba(2, 14, 39, 0.8);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     min-width: 160px;
@@ -149,10 +157,14 @@ h1{
     border-radius: 0px 0px 10px 10px;
 }
 
-
-.proj:hover .dropdown-content {
-display: flex;
+@media screen and (min-width: 940px) {
+    .proj:hover .dropdown-content {
+        display: flex;
+        }
 }
+
+
+
 
 
 /* Hero Section */

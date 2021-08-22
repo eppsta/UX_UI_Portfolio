@@ -9,14 +9,22 @@ function scrollProjects() {
 
 function open_navMenu() {
     var x = document.getElementById("navMenu");
-        if  (x.style.display == "flex") {
-            x.style.display = "none";
+        if  (x.className === "navMenu") {
+            x.className += " responsive";
         }   else {
-            x.style.display = "flex";
+            x.className = "navMenu";
         }
 
 }
 
+function open_dropdownContent () {
+    var x = document.getElementById("dropdown-content");
+        if (x.className === "dropdown-content") {
+            x.className += " responsive";
+        }   else {
+            x.className = "dropdown-content";
+        }
+}
 
 
 

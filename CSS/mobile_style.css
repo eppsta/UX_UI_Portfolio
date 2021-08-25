@@ -27,15 +27,7 @@ p2{
 
 
 
-/* Navigation Bar*/
-
-.flexnav{  
-   
-}
-
-.flexnav:before {
-    
-}
+/* ---------- Navigation Bar ---------- */
 
 
 .menuItems{
@@ -44,32 +36,95 @@ p2{
 }
 
 
+/* Hamburger Menu navIcon */
+
 .navIcon{
-    padding: 12px;
-    display: flex;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
 }
+
+.navIcon_burger {
+    width: 31px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.navIcon_burger:before,
+.navIcon_burger:after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.navIcon_burger:before {
+    transform: translateY(-10px);
+}
+
+.navIcon_burger:after {
+    transform: translateY(10px);
+}
+
+
+/* Hamburger Menu navIcon ANIMATION */
+
+.navIcon.open .navIcon_burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.navIcon.open .navIcon_burger:before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.navIcon.open .navIcon_burger:after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+
 
 
 .navItem {
-    padding: 22px 0px;
+    padding: 17.5px 0px;
 
 }
 
+.navItem:first-child {
+    margin-top: 40px;
+    padding-bottom: 0px;
+}
+
+.navItem:last-child {
+    margin-bottom: 40px;
+}
 
 .navItem a{
-    padding: 22px 38px;
+    padding: 17.5px 38px;
+    padding-right: 100%;
+    
 }
-
-
 
 
 .navMenu{
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     top:0;
     right: 0;
-    width: 225px;
+    width: 250px;
     margin-top: 60px;
     margin-right: 0px;
     margin-left: 0px;
@@ -78,44 +133,58 @@ p2{
     backdrop-filter: blur(5px);
     border-radius: 0px 0px 0px 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+
+   
+    transition: max-height .4s;
+    max-height: 0px;
+    overflow: hidden;
 
     
-    
-
 }
 
 .navMenu.responsive{
     display: flex;
+    transition: max-height 1.2s; 
+    max-height: 500px;
 }
 
 
 
-
-
-
-
-
 .dropdown-content {
-    display: none;
+    display: flex;
     flex-direction: column;
     margin-top: 20px;
     position: relative;
-    background-color: rgba(2, 14, 39, 0);
-    min-width: 160px;
+    background-color: rgba(2, 14, 39, .7);
+    padding: 0;
     border-radius: 0px 0px 0px 0px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+
+    transition: max-height .4s;
+    max-height: 0px;
+    overflow: hidden;
 
 }
 
 
 .dropdown-content.responsive {
     display: flex;
+    transition: max-height 1.2s; 
+    max-height: 500px;
+    margin-bottom: 20px;
 }
 
 
 .dropdown-content a {   
-    padding: 12px 16px;
+    padding: 12px 0px 12px 46px;
+}
+
+.dropdown-content a:first-child{   
+    margin-top: 17px;
+}
+
+.dropdown-content a:last-child{   
+    margin-bottom: 17px;
 }
   
 .dropdown-content a:hover {
@@ -133,7 +202,7 @@ p2{
 
 
 
-/* Hero Section */
+/* ---------- Hero Section ---------- */
 
 .content{
     margin-top: 180px;
@@ -157,7 +226,7 @@ p2{
 }
 
 
-/* Skills Section */
+/* ---------- Skills Section ---------- */
 
 .mySkills{
     padding-left: 20px;

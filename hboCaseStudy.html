@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBO Max Case Study</title>
+    <title>Lucas Portfolio</title>
 </head>
 
 <body>
@@ -20,13 +20,13 @@
                     <a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
                 </div>
 
-                <div class = "navIcon" id = "navIcon" onclick = "open_navMenu()">
-                    <i class="fa fa-bars" style="font-size:32px"></i>
+                <div class = "navIcon" id = "navIcon" onclick = "open_navMenu(); animate_navIcon()">
+                    <div class="navIcon_burger"></div>
                 </div>
                 
                
                 <div class = "navMenu" id = "navMenu">
-                    <div class = "navItem proj" onclick = "open_dropdownContent ()">
+                    <div class = "navItem proj" onclick = "open_dropdownContent()">
                         <a href = "#projects">Projects</a>
                         <div class="dropdown-content" id = "dropdown-content">
                             <a href="/UX_UI_Portfolio/hboCaseStudy.html">HBO Max</a>

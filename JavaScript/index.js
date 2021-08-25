@@ -7,6 +7,10 @@ function scrollProjects() {
     elem.scrollIntoView();
 }
 
+
+
+/* Open/Close Hamburger Menu */
+
 function open_navMenu() {
     var x = document.getElementById("navMenu");
         if  (x.className === "navMenu") {
@@ -17,7 +21,10 @@ function open_navMenu() {
 
 }
 
-function open_dropdownContent () {
+
+/* Open/Close Dropdown Content */
+
+function open_dropdownContent() {
     var x = document.getElementById("dropdown-content");
         if (x.className === "dropdown-content") {
             x.className += " responsive";
@@ -25,6 +32,23 @@ function open_dropdownContent () {
             x.className = "dropdown-content";
         }
 }
+
+
+
+/* Hamburger Menu navIcon ANIMATION */
+
+function animate_navIcon() {
+    var x = document.getElementById("navIcon");
+        if (x.className === "navIcon") {
+            x.className += " open";
+        }   else {
+                x.className = "navIcon"
+            }
+}
+
+
+
+
 
 
 

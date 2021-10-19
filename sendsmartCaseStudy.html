@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" style = "background-color: #F0F0F0";">
+<head>
+    <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style_CaseStudy.css">
+    <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class = "flexnav">
+            <div class = "menuItems">
+                <div class = "logoHome">
+                    <a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
+                </div>
+
+                <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
+                    <div class="navIcon_burger"></div>
+                </div>
+                
+               
+                <div class = "navMenu" id = "navMenu">
+                    <div class = "navItem proj" onclick = "open_dropdownContent()">
+                        <a href = "#projects">Projects</a>
+                        <div class="dropdown-content" id = "dropdown-content">
+                            <a href="/UX_UI_Portfolio/hboCaseStudy.html">HBO Max</a>
+                            <a href="#">Wildlife Rehab Center</a>
+                            <a href="#">Moab Music Festival</a>
+                        </div>
+                    </div>
+
+                    <div class = "navItem"><a href = "#resume">Resume</a></div> 
+                    <div class = "navItem"><a href = "#about">About</a></div>
+                    
+                </div>
+                
+                
+                
+
+            </div>
+                     
+
+        </nav>
+
+    </header>
+
+    <!---------- PROJECT OVERIEW ---------->
+    <section class = "projecOverview">
+        <div class = "overviewTop">
+            <div class = "overviewTopLeft">
+                <h1 class = "overviewTitle">SendSmart Web App</h1>
+                <h4 class = "productDescription">SendSmart is a web application utilized by Auto Dealerships to increase customer engagement through automated messaging. According to SendSmart, their solution can be expected to double web lead response rates.</h4>
+            </div>
+
+            <div class = "sendsmart-overviewTopRight overviewTopRight">
+                <img class = "sendsmart-overviewIMG overviewIMG" src = "/UX_UI_Portfolio/Images/SendSmart - SSlogo.png">
+            </div>
+        
+        </div>
+
+        <div class = "overviewBottom">
+            
+                <div class = "role">
+                    <h3>Role</h3>
+                    <p class = "bold" style = "margin-top: 25px">UX Research & Design<br></p>
+                    <p class = "roleDescription">
+                        User Surveys & Interviews<br>
+                        Affinity Diagram<br>
+                        Empathy Map<br>
+                        User Personas<br>
+                        Signal Detection<br>
+                        Problem Statement<br>
+                        Ideation<br>
+                        Feature Prioritization<br>
+                        Competitor Analysis<br>
+                        Task Flows<br>
+                        Wireframes & Prototype<br>
+                        Usability Testing & Analysis<br>
+                        Iterations
+                    </p>
+                </div>
+                
+                <div class = "team">
+                    <h3>Team</h3>
+                    <p class = "teamDescription">Solo Project</p>
+                </div>
+            
+                <div class = "tools">
+                    <h3>Tools</h3>
+                    <p class = "toolsDescription">
+                        Figma<br>
+                        Miro<br>
+                        Google Suite<br>
+                        Zoom
+                    </p>
+                </div>
+            
+        </div>
+
+        <div class = "rectangleDivider"></div>
+
+        <!-- SendSmart Steps -->
+
+        <div class = "stageContent">
+
+            <div class = "sendsmart-overview-sectionTitle sectionTitle"><h3 class = "regular">How does SendSmart work?</h3></div>
+
+            <div class = "sendsmartSteps-cardStack stacked-infoCards">
+                <div class = "infoCard">
+                    <div class = "sendsmartSteps">
+                        <img class = "img-sendsmartSteps" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 1.png"></img>
+                    </div>
+                </div>
+
+                <div class = "infoCard">
+                    <div class = "sendsmartSteps">
+                        <img class = "img-sendsmartSteps" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 2.png"></img>
+                    </div>
+                </div>
+
+                <div class = "infoCard">
+                    <div class = "sendsmartSteps">
+                        <img class = "img-sendsmartSteps" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 3.png"></img>
+                    </div>
+                </div>
+
+                <div class = "infoCard">
+                    <div class = "sendsmartSteps">
+                        <img class = "img-sendsmartSteps" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 4.png"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!---------- PROBLEM & SOLUTION ---------->
+
+    <section class = "sendsmart-problemSolution problemSolution">
+        <div class = "problem">
+            <h2>The Problem</h2>
+            <p class = "problemDescription">Dealership representatives have reported SendSmart <strong>doesn't allow</strong> them to <strong>organize and filter their messages and notifications</strong>. This makes it <strong>difficult to detect and navigate their assigned customers</strong>, which could result in <strong>lost opportunities</strong>.
+            </p>
+        </div>
+        <div class = "solution">
+            <h2>Proposed Solution</h2>
+            <p class = "solutionDescription">Increase the representatives’ sensitivity toward detecting their assigned customers and provide ways to discern them from the pool of customers being assisted by other team members. This includes adding a personal inbox, improving the layout so key identifiers can be displayed, and adding personalized notifications.
+            </p>
+        </div>
+    </section>
+
+
+    <!---------- USER RESEARCH ---------->
+    <div class = "sendsmart-stageTitle stageTitle"><h2>User Research</h2></div>
+
+    <section class = "stageSection">
+        
+        
+
+        <div class = "stageContent">
+
+        <!-- User Surveys & Interviews-->
+
+            <div class = "sectionTitle"><h3>User Surveys & Interviews</h3></div>
+            <div class = "sectionDescription"><p>6 dealership representatives were <strong>surveyed</strong> about their use of SendSmart. Follow-up <strong>interviews</strong> were conducted after narrowing down their <strong>pain points and blockers</strong>.</p></div>
+           
+            <div class = "listDescription"><p class = "bold">Topics Explored:</p></div>
+            <ul class = "sectionList">
+                <li class = "list"><p>What <strong>types of dealer representatives</strong> use SendSmart?</p></li>
+                <li class = "list"><p>How helpful is the <strong>message notification system</strong>?</p></li>
+                <li class = "list"><p>How easily do dealer representatives <strong>navigate messages</strong>?</p></li>
+            </ul>
+
+            <div class = "sectionDescription50"><p>It became apparent that some <strong>responses differed</strong> depending upon <strong>job title / position.</strong></p></div>
+            
+            <div class = "stacked-infoCards">
+                <div class = "infoCard">
+                    <div class = "userSurvey">
+                        <img class = "img-userSurvey" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Messages Per Day.png"></img>
+                    </div>
+                </div>
+
+                <div class = "infoCard">
+                    <div class = "userQuotes">
+                        <img class = "img-userQuotes" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - organization of messages.png"></img>
+                    </div>
+                </div>
+
+                <div class = "infoCard">
+                    <div class = "userQuotes">
+                        <img class = "img-userQuotes" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - message notification system.png"></img>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class = "rectangleDivider"></div>
+
+
+        <!-- Affinity Diagram -->
+            
+        <div class = "sectionTitle"><h3>Affinity Diagram</h3></div>
+        <div class = "sectionDescription"><p>To analyze the data further, an affinity diagram was constructed to find <strong>patterns</strong> among responses.</p></div>
+    
+        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Affinity Diagram.png">
+
+        <div class = "listDescription"><p>Additional Key Findings:</p></div>
+        <ul class = "sectionList">
+            <li class = "list"><p>SendSmart is used for <strong>different reasons</strong> based on <strong>job title / position</strong></p></li>
+            <li class = "list"><p>Dealer representatives use SendSmart most days on both <strong>desktop and mobile devices</strong></p></li>
+            <li class = "list"><p><strong>Auditory & visual notifications</strong> are used by dealer reps on both desktop and mobile devices</p></li>
+            <li class = "list"><p><strong>Notification preferences</strong> vary by job title / position</p></li>
+        </ul>
+
+        <div class = "sectionDescription50"><p>An additional diagram showing the <strong>dealership process</strong> was made to provide <strong>context</strong>.</p></div>
+
+        <div class = "stacked-infoCards">
+            <div class = "sendsmartProcess-card infoCard">
+                <div class = "sendsmartProcess">
+                    <img class = "img-sendsmartProcess" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Personas and Process.png"></img>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class = "rectangleDivider"></div>
+
+
+        <!-- Empathy Maps -->
+            
+            <div class = "sectionTitle"><h3>Empathy Maps</h3></div>
+            <div class = "sectionDescription"><p>Using qualitative data from both user surveys and interviews, mulitple empathy maps were developed to understand the needs of each type of dealer representative.</p></div>
+   
+            <div class = "imgTitle"><p class = "bold">BDC Representative</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Empathy Map - BDC Rep.png">
+
+            <div class = "imgTitle"><p class = "bold">BDC Manager</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Empathy Map - BDC Manager.png">
+
+            <div class = "imgTitle"><p class = "bold">Appraiser / Salesperson</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Empathy Map - Appraiser.png">
+
+            <div class = "rectangleDivider"></div>
+
+
+        <!-- User Personas -->
+            
+            <div class = "sectionTitle"><h3>User Personas</h3></div>
+            <div class = "sectionDescription"><p>The creation of personas was guided by the development of empathy maps above. Each persona represents a <strong>different user type</strong> of SendSmart.</p></div>
+
+            <div class = "imgTitle"><p class = "bold">BDC Representative</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Persona - BDC Rep.png" style = "filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))">
+
+            <div class = "imgTitle"><p class = "bold">BDC Manager</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Persona - BDC Manager.png" style = "filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))">
+
+            <div class = "imgTitle"><p class = "bold">Appraiser / Salesperson</p></div>
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Persona - Appraiser.png" style = "filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))">
+
+        </div>
+    </section>
+
+
+    <!----------- DEFINING THE PROBLEM ---------->
+    <div class = "sendsmart-stageTitle stageTitle"><h2>Defining the Problem</h2></div>
+
+    <section class = "stageSection">
+
+        <div class = "stageContent">
+
+        <!-- Signal Detection Theory -->
+
+            <div class = "sectionTitle"><h3>Signal Detection Theory</h3></div>
+            <div class = "sectionDescription"><p>Based on the user research, there are dealership representatives who experience pain points and blockers with regard to filtering and detecting their assigned customers. This can be expressed in terms of <strong>Signal Detection Theory (SDT)</strong>.</p></div>
+            <div class = "sectionDescription"><p>A brief overview of SDT is provided below. Feel free to skip directly to its application to SendSmart if no overview of the theory is needed.</p></div>
+           
+            <div class = "listDescription"><p>Research Topic Questions Explored:</p></div>
+            <ul class = "sectionList">
+                <li class = "list"><p>What kind(s) of viewers use the HBO Max?</p></li>
+                <li class = "list"><p>What are the viewing habits of these viewers?</p></li>
+                <li class = "list"><p>How easily are viewers able to access content they’re looking for?</p></li>
+                <li class = "list"><p>How easily are viewers able to discover new content they find interesting?</p></li>
+                <li class = "list"><p>Why do viewers choose HBO Max over competitors?</p></li>
+                <li class = "list"><p>What features from competitors stand out that may be lacking in the design of HBO Max?</p></li>
+            </ul>
+
+            <div class = "rectangleDivider"></div>
+
+        <!-- User Quotes-->
+            
+            <div class = "sectionTitle"><h3>User Quotes</h3></div>
+            
+            <div class = "quotes">
+                <p>Biggest hurdle when searching for content?</p>
+                <br>
+                <p>“You can't access past episodes in your "Continue Watching". You have to access it somewhere else by searching for it, which is quite frustrating.” - Jason</p>
+                <br>
+                <br>
+                <p>When do viewers choose other streaming services?</p>
+                <br>
+                <p>“HBO Max still doesn't have much 4K content. If the content is available in 4K elsewhere, I'll pick to watch that content on a different streaming app.” - Nico</p>
+            </div>
+
+            <div class = "rectangleDivider"></div>
+
+
+        <!-- Affinity Diagram -->
+            
+            <div class = "sectionTitle"><h3>Affinity Diagram</h3></div>
+            <div class = "sectionDescription"><p>To make sense of the data, an affinity diagram was constructed to find patterns among the various responses.</p></div>
+        
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Affinity Diagram (after).jpg">
+ 
+            <div class = "rectangleDivider"></div>
+
+
+        <!-- Empathy Map -->
+            
+            <div class = "sectionTitle"><h3>Empathy Map</h3></div>
+            <div class = "sectionDescription"><p>Using qualitative data from user interviews, an empathy map was developed to better understand their needs.</p></div>
+    
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Empathy Map.jpg">
+
+            <div class = "rectangleDivider"></div>
+
+
+        <!-- User Persona -->
+            
+            <div class = "sectionTitle"><h3>User Persona</h3></div>
+            <div class = "sectionDescription"><p>While users of HBO Max come from many different backgrounds, a single persona was created as a way to capture the most general experiences individuals have with the application.</p></div>
+
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - User Persona.png">
+
+        </div>
+    </section
+
+
+
+
+ 
+    <script src = "/UX_UI_Portfolio/JavaScript/index.js"></script> 
+
+</body>
+</html>

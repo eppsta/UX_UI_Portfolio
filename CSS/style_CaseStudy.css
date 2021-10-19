@@ -1,0 +1,654 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+
+
+/* ---------- Fonts ---------- */
+
+h1{
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    
+ }
+ 
+ h2{
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 43px;
+    font-weight: 600;
+     
+ }
+ 
+ h3{
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    line-height: 33px;
+ }
+
+ h3.regular{
+    font-weight: 400;
+ }
+ 
+ h4{
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+ }
+
+ 
+ p{
+    margin: 0;
+    font-size: 21px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+ }
+
+ p.bold{
+    font-weight: 700;
+ }
+
+ .p2{
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+ }
+
+ strong{
+    font-weight: 700;
+ }
+
+
+/* ---------- Navigation Bar ---------- */
+
+
+/* Nav Bar */
+
+.flexnav{  
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-color: rgba(2, 14, 39, 0.7);
+}
+
+.flexnav:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.menuItems{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px; 
+    align-items: center; 
+}
+
+/* Logo */
+
+.logoHome a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 16px 20px;
+}
+
+
+/* Nav Icon */
+
+.navIcon{
+    display: none; 
+}
+
+
+/* Nav Items */
+
+.navMenu{
+    display: flex;  
+}
+
+.navItem a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 17.5px 20px;
+    
+}
+
+
+/* Dropdown */
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    margin-top: 17.5px;
+    position: absolute;
+    background-color: rgba(2, 14, 39, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    min-width: 160px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 17px 0px;
+
+}
+
+.dropdown-content a {   
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgba(2, 14, 39, 0.6);
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (min-width: 940px) {
+    .proj:hover .dropdown-content {
+        display: flex;
+        }
+}
+
+/* ---------- Footer & Contact ---------- */
+
+
+footer{
+    background-color: #344465;
+    color: white;
+    text-align: center;
+}
+
+.collaborate{
+    font-weight: 600;
+}
+
+.contact{
+    padding-top: 46px;
+}
+
+.questions{
+    margin-top: 21px;
+}
+
+
+.footer-iconsContainer{
+    margin-top: 78px;
+}
+
+
+.footer-icons{
+    padding: 0px;
+    display: inline-block;
+   
+}
+
+.mail{
+    margin-right: 50px;
+}
+
+.copyright{
+    margin-top: 65px;
+    padding-bottom: 24px;
+}
+
+
+
+/* -------------------- CASE STUDIES -------------------- */
+
+
+
+
+/*---------- GENERAL CASE STUDY COMPONENTS ----------*/
+
+
+/* ----- Project Overview ----- */
+
+.projecOverview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+
+
+/* -- Overiew Top -- */
+.overviewTop{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 198px;
+    max-width: 1164px;
+    width: 100%;
+}
+
+/* Top Left */
+.overviewTopLeft{
+    width: 50%;
+    max-width: 542px;
+    min-width: 438px;
+    margin-right: 100px;  
+}
+
+.overviewTitle{
+    line-height: 52px; 
+}
+
+.productDescription{
+    margin-top: 25px;
+}
+
+/* Top Right */
+.overviewTopRight{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;  
+    
+}
+
+.overviewIMG{
+    width: 100%;
+}
+
+
+/* -- Overview Bottom -- */
+.overviewBottom{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Role */
+.role{
+    width: 100%;
+    max-width: 260px; 
+}
+
+.roleDescription{
+    margin-top: 25px;
+}
+
+/* Team */
+.team{
+    width: 100%;
+    max-width: 260px;
+}
+.teamDescription{
+    margin-top: 25px;
+}
+
+/* Tools */
+.tools{
+    width: 100%;
+    max-width: 216px;
+}
+
+.toolsDescription{
+    margin-top: 25px;  
+}
+
+
+/* ---------- Problem & Solution ---------- */
+
+.problemSolution{
+    background-color: #C4C4C4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* -- Problem -- */
+.problem{
+    width: 100%;
+    max-width: 1164px;
+    padding-top: 75px;
+}
+
+.problemDescription{
+    margin-top: 25px;
+}
+
+/* -- Solution -- */
+.solution{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 50px;
+}
+
+.solutionDescription{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+
+/* ---------- Content ---------- */
+
+/* -- Stage --*/
+.stageTitle{
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #C4C4C4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.stageContent{
+    width: 100%;
+    max-width: 1164px;
+}
+
+/* -- Section -- */
+.sectionTitle{
+    margin-top: 50px;
+}
+
+.sectionHeading{
+    margin-top: 50px;   
+}
+
+.sectionDescription{
+    margin-top: 25px;
+}
+
+.sectionDescription50{
+    margin-top: 50px;
+}
+
+/* -- Lists -- */
+.listDescription{
+    margin-top: 50px; 
+}
+
+ul.sectionList{
+    list-style-type: disc;
+    padding-left: 64px;
+    margin-top: 15px;
+    margin-bottom: 0px;   
+}
+
+li.list{
+    padding: 10px 0px 10px 23px;
+}
+
+/* -- Images -- */
+.imgTitle{
+    margin-top: 50px;
+}
+
+.sectionIMG{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 50px;
+}
+
+.sectionIMGwTitle{
+    width: 100%;
+    max-width: 1164px;
+    margin-top: 25px;
+}
+
+/* -- Design Comparison -- */
+.designComparison{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.comparedElement{
+    width: 48%;
+    text-align: center;
+}
+
+/* -- Divider -- */
+.rectangleDivider{
+    margin-top: 50px;
+    height: 2px;
+    max-width: 1164px;
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+
+
+
+
+/* ------------------ CUSTOM COMPONENTS --------------------*/
+
+
+
+/* --------------- SENDSMART --------------- */
+
+/* ----- Global Components ----- */
+
+.infoCard{
+    max-width: 768px;
+    width: 100%;
+    background-color: #FDFDFD;
+    border-radius: 104px;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    
+}
+
+.stacked-infoCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+
+/* ----- Local Components ----- */
+
+/* -- PROJECT OVERVIEW -- */
+.sendsmart-overviewIMG{
+    max-width: 334px;
+    transform:translateY(-41px);
+}
+
+.sendsmart-overview-sectionTitle{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sendsmartSteps-cardStack{
+    margin-bottom: 100px;
+}
+
+.sendsmartSteps{
+    margin: 36px 40px 40px; 
+
+}
+
+.img-sendsmartSteps{
+    max-width: 470px;
+    width: 100%;
+}
+
+.sendsmart-stageTitle{
+    background-color: #2E3538;
+}
+
+/* -- PROBLEM & SOLUTION -- */
+
+.sendsmart-problemSolution {
+    background-color: #2E3538;
+}
+
+
+/* -- USER RESEARCH -- */
+
+.userSurvey{
+    margin: 70px 40px;  
+}
+
+.img-userSurvey{
+    max-width: 620px;
+    width: 100%;  
+}
+
+.userQuotes{
+    margin: 70px 40px 115px;
+}
+
+.img-userQuotes{
+    max-width: 626px;
+    width: 100%;
+}
+
+.sendsmartProcess-card{
+    max-width: 870px;
+}
+
+.sendsmartProcess{
+    margin: 45px 0px 46px;
+}
+
+.img-sendsmartProcess{
+    width: 100%;
+}
+
+/* --------------- HBO MAX --------------- */
+
+/* ----- Global Components ----- */
+
+.hbo-stageTitle{
+    background-color: #2E215A;
+}
+
+
+/* ----- Local Components ----- */
+
+
+/* -- PROBLEM & SOLUTION -- */
+
+.hbo-problemSolution {
+    background-color: #2E215A;
+}
+
+
+/* -- USER RESEARCH -- */
+
+.quotes{
+    margin-top: 25px;
+}
+
+
+/* -- DEFINITION & IDEATION -- */
+/* Problem Statement */
+
+.problemStatement{
+    margin-top: 50px;
+}
+
+
+/* Feature Prioritization Matrix */
+
+.matrixDescription{
+    margin-top: 50px
+}
+
+
+/* -- DESIGN & PROTOTYPE --/
+/* Proposed User Flow */
+
+.featuresDescription{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+
+
+/* -- Testing & Iteration --/
+/* Usability Testing*/
+
+.testingIMGs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.testIMGLeft{
+    width: 44.6%;
+}
+
+.testIMGRight{
+    width: 51.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testIMG{
+    width: 100%;
+    max-width: 1164px;
+}
+
+
+/* Usability Testing*/
+
+.feedbackList{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+
+/* Iterations */
+
+.iterationsList{
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+/* Reflections & Next Steps */
+
+.reflection-stageSection{
+    margin-bottom: 200px;
+}

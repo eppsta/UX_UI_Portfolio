@@ -59,7 +59,7 @@ h1{
  }
 
  strong{
-    font-weight: 00;
+    font-weight: 900;
  }
 
 
@@ -173,7 +173,7 @@ h1{
 }
 
 
-
+/* -------------------- HOME / MAIN --------------------*/
 
 
 /* ---------- Hero Section ---------- */
@@ -224,7 +224,7 @@ h1{
 
 
 
-/* Skills Section */
+/* ---------- Skills Section ---------- */
 
 .mySkills{
     background-color: #344465;
@@ -270,7 +270,7 @@ h1{
     margin-top: 30px;
 }
 
-/* Projects Section */
+/* ---------- Projects Section ---------- */
 
 .projectButton{
     background-image: linear-gradient(180deg, #1A3F8E 0%, #0B255B 100%);
@@ -452,7 +452,7 @@ h1{
 
 
 
-/* Footer & Contact */
+/* ---------- Footer & Contact ---------- */
 
 
 footer{
@@ -499,9 +499,9 @@ footer{
 
 
 
-/* ------------- HBO CASE STUDY ------------ */
+/* -------------------- CASE STUDIES -------------------- */
 
-/*-- CASE STUDY COMPONENTS --*/
+/*---------- GENERAL CASE STUDY COMPONENTS ----------*/
 
 .stageSection{
     display: flex;
@@ -513,8 +513,9 @@ footer{
 
 .stageTitle{
     margin-top: 75px;
-    width: 200%;
+    width: 100%;
     text-align: center;
+    color: white;
     background-color: #C4C4C4;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -591,13 +592,24 @@ li.list{
 }
 
 
-/* -- CUSTOM COMPONENTS --*/
+/* ------------------ CUSTOM COMPONENTS --------------------*/
+
+/* --------------- HBO MAX --------------- */
+
+/* ----- Global Components ----- */
+
+.hbo-stageTitle{
+    background-color: #2E215A;
+}
+
+
 
 
 /* PROJECT OVERVIEW */
 
+
+
 .hbo-projecOverview{
-    background-color: #F2EEFF;
     display: flex;
     flex-direction: column;
     align-items: center;

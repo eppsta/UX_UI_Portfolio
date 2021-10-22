@@ -59,6 +59,10 @@ h1{
  p.bold{
     font-weight: 700;
  }
+ 
+ p.extra-bold{
+    font-weight: 900;
+ }
 
  .p2{
     margin: 0;
@@ -68,6 +72,10 @@ h1{
 
  strong{
     font-weight: 700;
+ }
+
+ b{
+    font-weight: 900;
  }
 
 
@@ -399,6 +407,28 @@ footer{
     margin-top: 50px;
 }
 
+.sectionDescription75{
+    margin-top: 75px;
+}
+
+.indent90-sectionDescription{
+    margin-top: 25px;
+    margin-left: 90px;
+}
+.indent90-sectionDescription50{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.indent190-sectionDescription{
+    margin-top: 25px;
+    margin-left: 190px;
+}
+.indent190-sectionDescription50{
+    margin-top: 50px;
+    margin-left: 190px;
+}
+
 /* -- Lists -- */
 .listDescription{
     margin-top: 50px; 
@@ -468,14 +498,11 @@ li.list{
 .infoCard{
     max-width: 768px;
     width: 100%;
-    background-color: #FDFDFD;
-    border-radius: 104px;
-    display: flex;
-    justify-content: center;
     margin-top: 75px;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
     
 }
+
 
 .stacked-infoCards{
     display: flex;
@@ -484,6 +511,36 @@ li.list{
     margin-bottom: 75px;
 }
 
+.sendsmart-stageTitle{
+    background-color: #2E3538;
+}
+
+.sendsmartOverlay-stageTitle{
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #2E3538;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.infoOverlay{
+    background-color: white;
+}
+
+.overlaySection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.overlayContent{
+    width: 100%;
+    max-width: 1164px;
+}
 
 /* ----- Local Components ----- */
 
@@ -512,9 +569,7 @@ li.list{
     width: 100%;
 }
 
-.sendsmart-stageTitle{
-    background-color: #2E3538;
-}
+
 
 /* -- PROBLEM & SOLUTION -- */
 
@@ -543,17 +598,26 @@ li.list{
     width: 100%;
 }
 
-.sendsmartProcess-card{
+.sendsmartProcess-infocard{
     max-width: 870px;
 }
 
-.sendsmartProcess{
-    margin: 45px 0px 46px;
-}
 
-.img-sendsmartProcess{
+
+
+/* -- TESTING & ITERATIONS -- */
+
+.sendsmart-accountIconography{
+    max-width: 542px;
     width: 100%;
 }
+
+.sendsmart-sideNavigation{
+    max-width: 654px;
+    width: 100%;
+}
+
+
 
 /* --------------- HBO MAX --------------- */
 

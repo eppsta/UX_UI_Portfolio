@@ -128,7 +128,7 @@ p2{
     margin-top: 60px;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: rgba(2, 14, 39, 0.8);
+    background-color: rgba(2, 14, 39, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-radius: 0px 0px 0px 30px;
@@ -136,7 +136,7 @@ p2{
 
    
     transition: max-height .4s;
-    max-height: 0px;
+    max-height: .25px;
     overflow: hidden;
 }
 
@@ -147,7 +147,6 @@ p2{
     display: flex;
     transition: max-height 1.2s; 
     max-height: 500px;
-
    
 }
 

@@ -515,8 +515,8 @@ li.list{
     background-color: #2E3538;
 }
 
-.sendsmartOverlay-stageTitle{
-    margin-top: 0px;
+.sendsmartScroll-stageTitle{
+    margin-top: 50px;
     width: 100%;
     text-align: center;
     color: white;
@@ -525,22 +525,38 @@ li.list{
     padding-bottom: 6px;
 }
 
-.infoOverlay{
+.scrollBox{
     background-color: white;
+    overflow-y: auto;
 }
 
-.overlaySection{
+.scrollBox::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scrollBox::-webkit-scrollbar:vertical {
+    width: 16px;
+}
+
+.scrollBox::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.scrollSection{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.overlayContent{
+.scrollContent{
     width: 100%;
     max-width: 1164px;
 }
+
 
 /* ----- Local Components ----- */
 
@@ -602,8 +618,18 @@ li.list{
     max-width: 870px;
 }
 
+/* -- DEFINING THE PROBLEM -- */
+
+.sendsmartSDT-scrollBox{
+    height: 565px;
+    
+    padding-bottom: 50px;
+}
 
 
+.sendsmart-responseMatrix{
+    max-width: 712px;
+}
 
 /* -- TESTING & ITERATIONS -- */
 
@@ -616,6 +642,8 @@ li.list{
     max-width: 654px;
     width: 100%;
 }
+
+
 
 
 

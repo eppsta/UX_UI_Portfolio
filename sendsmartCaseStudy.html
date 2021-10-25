@@ -243,34 +243,74 @@
             
             <div class = "sectionDescription"><p>Based on the user research, there are dealership representatives who experience pain points and blockers with regard to filtering and detecting their assigned customers. This can be expressed in terms of <strong>Signal Detection Theory (SDT)</strong>.</p></div>
             <div class = "sectionDescription"><p>A brief overview of SDT is provided below. Feel free to skip directly to its application to SendSmart if no overview of the theory is needed.</p></div>
-            <div class = "sectionDescription"><p class = "bold"><a href>SDT Brief Overview</a></p></div>
             
-
-            <div class = "rectangleDivider"></div>
-
-        <!-- SDT Overview -->
-            <div class = "infoOverlay">
+            <!-- SDT Overview -->
+            
+            <div class = "sendsmartScroll-stageTitle stageTitle"><p><strong>Signal Detection Theory</strong> | Brief Overview</p></div>
+           
+            <div class = "sendsmartSDT-scrollBox scrollBox">
                 
-                <div class = "sendsmartOverlay-stageTitle stageTitle"><h3>Signal Detection Theory | Brief Overview</h3></div>
-
-                <div class = overlaySection>
-                    <div class = "overlayContent">
+                <div class = scrollSection>
+                    <div class = "scrollContent">
                 
-                        <div class = "sectionDescription"><p>Based on the user research, there are dealership representatives who experience pain points and blockers with regard to filtering and detecting their assigned customers. This can be expressed in terms of <strong>Signal Detection Theory (SDT)</strong>.</p></div>
-                        <div class = "sectionDescription"><p>A brief overview of SDT is provided below. Feel free to skip directly to its application to SendSmart if no overview of the theory is needed.</p></div>
-                        <div class = "sectionDescription"><p class = "bold"><a href>SDT Brief Overview</a></p></div>
+                        <div class = "sectionDescription"><p>Signal Detection Theory can be used to understand situations wherein an operator must detect whether a <strong>signal</strong> is <strong>present</strong> or <strong>absent</strong>. In this case study, it applies to whether a dealer rep can detect their customer’s message. Their internal <strong>response</strong> is categorized as either <strong>“Yes”</strong> or <strong>“No”</strong>.</p></div>
+                        <div class = "stacked-infoCards">
+                            <img class = "sendsmart-responseMatrix sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Response Matrix.png">
+                        </div>
+
+                        <div class = "sectionDescription50"><p>Signal and noise can be modeled using <strong>distribution curves</strong>. In most situations, there will be at least some <strong>overlap</strong> between the noise distribution and the signal distribution. The overlapped region is where <strong>breakdowns</strong> in performance occur.</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Distribution Curves.png">
+
+                        <div class = "rectangleDivider"></div>
+
+                        <!-- Yes / No Response -->
+
+                        <div class = "sectionHeading"><p class = "bold">“Yes” / “No” Response</p></div>
+                        
+                        <div class = "sectionDescription"><p><strong>“Yes” Response:</strong> If the signal is <strong>present</strong>, it’s a <strong>HIT</strong>; if the signal is <strong>absent</strong>, it’s a <strong>FALSE ALARM</strong>.</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Yes Response.png">
+
+                        <div class = "sectionDescription50"><p><strong>“No” Response:</strong> If the signal is <strong>present</strong>, it’s a <strong>MISS</strong>; if the signal is <strong>absent</strong>, it’s a <strong>CORRECT REJECTION</strong>.</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - No Response.png">
+
+                        <div class = "rectangleDivider"></div>
+
+                        <!-- Response Strategy -->
+
+                        <div class = "sectionHeading"><p class = "bold">Response Strategy (Bias)</p></div>
+                        
+                        <div class = "sectionDescription"><p>The operator can <strong>bias</strong> their internal response to lean <strong>liberal</strong> (i.e. responding “Yes” <i>more</i> frequently) or <strong>conservative</strong> (i.e. responding “Yes” <i>less</i> frequently). This can be used to as a <strong>strategy</strong> to maximize their HITS or CORRECT REJECTIONS. However, a <strong>trade-off</strong> will typically occur, resulting in a higher occurance of FALSE ALARMS or MISSES.</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Response Strategies.png">
+
+                        <div class = "rectangleDivider"></div>
+
+                        <!-- Sensitivity -->
+
+                        <div class = "sectionHeading"><p class = "bold">Sensitivity</p></div>
+
+                        <div class = "sectionDescription"><p>Sensitivity is represented in the model as <strong>d’ (d-prime)</strong>. This is the <strong>measure of separation</strong> between the signal and noise distribution curves. The <strong>greater</strong> the separation, the <strong>higher</strong> the sensitivity</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Medium Sensitivity.png">
+
+                        <div class = "sectionDescription75"><p>When <strong>increasing</strong> sensitivity, it becomes <strong>easier</strong> for the operator to <strong>discern</strong> the signal from the noise. This <strong>improves</strong> their performance by increasing the probability of HITS and CORRECT REJECTIONS, while decreasing the chance of FALSE ALARMS and MISSES</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - High Sensitivity.png">
+
+                        <div class = "sectionDescription75"><p>When <strong>decreasing</strong> sensitivity, it becomes <strong>difficult</strong> for the operator to discern the signal from the noise. This <strong>weakens</strong> their performance by decreasing the probability of HITS and CORRECT REJECTIONS, while increasing the chance of FALSE ALARMS and MISSES</p></div>
+                        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SDT - Low Sensitivity.png">
 
                     </div>
                 </div>
-
-            
+           
             </div>
+
+            <div class = "rectangleDivider"></div>
+
+        
 
         <!-- SDT Application to SendSmart -->
             
             <div class = "sectionTitle"><h3>SDT Application to SendSmart</h3></div>
             
-            <div class = "sectionDescription"><p>SDT doesn’t apply to all personas equally. The  uses SendSmart to <strong>BDC representative</strong> actively engage with customers in real-time. The <strong>BDC manager</strong> monitors the conversations to ensure quality. The <strong>appraiser / salesperson</strong> refers back to conversations in SendSmart to get up-to-speed on the customer’s situation before they arrive at the dealership.</p></div>
+            <div class = "sectionDescription"><p>SDT doesn’t apply to all personas equally. The <strong>BDC representative</strong> actively engages with customers in real-time. The <strong>BDC manager</strong> monitors the conversations to ensure quality. The <strong>appraiser / salesperson</strong> refers back to conversations in SendSmart to get up-to-speed on the customer’s situation before they arrive at the dealership.</p></div>
 
             <div class = "sectionHeading"><p class = "bold">BDC Representative</p></div>
             <div class="sectionDescription"><p>The BDC representative uses SendSmart to actively engage with customers in real-time. To do this, they have to sift through the <strong>noise</strong> of notifications/messages of their teammates in order to detect their assigned customer’s <strong>signal</strong>. Because this noise is excessive, they often experience <strong>false alarms</strong>. This leads to representatives taking a more <strong>conservative response</strong> to incoming notifications and messages, resulting in an increased probability of <strong>missed opportunities</strong>.</p></div>
@@ -291,7 +331,7 @@
             
             <div class = "sectionDescription"><p>By framing the issues dealership representatives face in terms of SDT, it helped to develop a concise problem statement to be considered for the design phase:</p></div>
         
-            <div class = "sectionDescription"><p><i>It has been observed SendSmart doesn't afford dealership representatives the ability to <strong>sort and filter their notifications and messages</strong> making it <strong>difficult to detect and navigate their customers</strong>, which has led to <strong>missed opportunities</strong>.</i></p></div>
+            <div class = "sectionDescription"><p><i>It has been observed SendSmart doesn't afford dealership representatives the ability to <strong>sort and filter their notifications and messages</strong> making it <strong>difficult to detect and navigate their customers</strong>, which leads to <strong>missed opportunities</strong>.</i></p></div>
  
     </section>
 

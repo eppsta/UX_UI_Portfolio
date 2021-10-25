@@ -138,14 +138,17 @@ p2{
     transition: max-height .4s;
     max-height: 0px;
     overflow: hidden;
-
-    
 }
+
+
+
 
 .navMenu.responsive{
     display: flex;
     transition: max-height 1.2s; 
     max-height: 500px;
+
+   
 }
 
 

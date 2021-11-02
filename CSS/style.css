@@ -139,7 +139,7 @@ h1{
 .dropdown-content {
     display: flex;
     flex-direction: column;
-    margin-top: 17.5px;
+    margin-top: 17.25px;
     position: absolute;
     background-color: rgba(2, 14, 39, 0);
     -webkit-backdrop-filter: blur(15px);
@@ -152,7 +152,7 @@ h1{
     overflow: hidden;
     max-height: .25px;
     transition: max-height 1.2s, background-color 3s;
-    
+   
    
 }
 
@@ -180,10 +180,9 @@ h1{
     max-height: 500px;
     transition: max-height 1.2s, background-color .4s;
     background-color: rgba(2, 14, 39, 0.8);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 }
-
-
 /* -------------------- HOME / MAIN --------------------*/
 
 

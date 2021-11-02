@@ -156,7 +156,7 @@ b{
 .dropdown-content {
     display: flex;
     flex-direction: column;
-    margin-top: 17.5px;
+    margin-top: 17.25px;
     position: absolute;
     background-color: rgba(2, 14, 39, 0);
     -webkit-backdrop-filter: blur(15px);
@@ -437,20 +437,20 @@ footer{
 
 .indent90-sectionDescription{
     margin-top: 25px;
-    margin-left: 90px;
+    margin-left: 8%;
 }
 .indent90-sectionDescription50{
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 8%;
 }
 
 .indent190-sectionDescription{
     margin-top: 25px;
-    margin-left: 190px;
+    margin-left: 16%;
 }
 .indent190-sectionDescription50{
     margin-top: 50px;
-    margin-left: 190px;
+    margin-left: 16%;
 }
 
 /* -- Lists -- */
@@ -460,9 +460,10 @@ footer{
 
 ul.sectionList{
     list-style-type: disc;
-    padding-left: 64px;
-    margin-top: 15px;
-    margin-bottom: 0px;   
+}
+
+.sectionList{
+    margin-left: 3%;
 }
 
 li.list{
@@ -486,6 +487,22 @@ li.list{
     margin-top: 25px;
 }
 
+/* -- Info Cards -- */
+
+.infoCard{
+    max-width: 768px;
+    width: 100%;
+    margin-top: 75px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));   
+}
+
+.stacked-infoCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
 /* -- Design Comparison -- */
 .designComparison{
     display: flex;
@@ -498,53 +515,14 @@ li.list{
     text-align: center;
 }
 
-/* -- Divider -- */
-.rectangleDivider{
-    margin-top: 50px;
-    height: 2px;
-    max-width: 1164px;
-    width: 100%;
-    background-color: #C4C4C4;
-}
+/* -- Scroll Box -- */
 
-
-
-
-
-/* ------------------ CUSTOM COMPONENTS --------------------*/
-
-
-
-/* --------------- SENDSMART --------------- */
-
-/* ----- Global Components ----- */
-
-.infoCard{
-    max-width: 768px;
-    width: 100%;
-    margin-top: 75px;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-    
-}
-
-
-.stacked-infoCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 75px;
-}
-
-.sendsmart-stageTitle{
-    background-color: #2E3538;
-}
-
-.sendsmartScroll-stageTitle{
+.scrollTitle{
     margin-top: 50px;
     width: 100%;
     text-align: center;
     color: white;
-    background-color: #2E3538;
+    background-color: #C4C4C4;
     padding-top: 6px;
     padding-bottom: 6px;
 }
@@ -581,6 +559,37 @@ li.list{
     max-width: 1164px;
 }
 
+/* -- Divider -- */
+.rectangleDivider{
+    margin-top: 50px;
+    height: 2px;
+    max-width: 1164px;
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+
+
+
+
+/* ------------------ CUSTOM COMPONENTS --------------------*/
+
+
+
+/* --------------- SENDSMART --------------- */
+
+/* ----- Global Components ----- */
+
+
+
+.sendsmart-stageTitle{
+    background-color: #2E3538;
+}
+
+.sendsmartScroll-scrollTitle{
+    background-color: #2E3538;
+}
+
 
 /* ----- Local Components ----- */
 
@@ -597,11 +606,6 @@ li.list{
 
 .sendsmartSteps-cardStack{
     margin-bottom: 100px;
-}
-
-.sendsmartSteps{
-    margin: 36px 40px 40px; 
-
 }
 
 .img-sendsmartSteps{
@@ -644,9 +648,9 @@ li.list{
 
 /* -- DEFINING THE PROBLEM -- */
 
+
 .sendsmartSDT-scrollBox{
-    height: 565px;
-    
+    height: 565px; 
     padding-bottom: 50px;
 }
 

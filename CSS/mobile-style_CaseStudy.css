@@ -233,6 +233,7 @@ p{
 
 /*---------- GENERAL CASE STUDY COMPONENTS ----------*/
 
+/* -- Overview Top -- */
 .overviewTop{
     padding-top: 150px;
 }
@@ -241,6 +242,14 @@ p{
     min-width: 321px;
     margin-right: 50px;
 }
+
+/* -- Overview Bottom -- */
+.overviewBottom{ 
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+
 
 @media screen and (max-width: 640px){
 
@@ -251,7 +260,6 @@ p{
     padding-right: 20px;
    
 }
-
 
 /* -- Overiew Top -- */
 .overviewTop{
@@ -289,12 +297,6 @@ p{
 
 
 /* -- Overview Bottom -- */
-.overviewBottom{
-    
-    margin-top: 38px;
-    margin-bottom: 38px;
-   
-}
 
 /* Role */
 .role{
@@ -344,37 +346,30 @@ p{
 
 /* ---------- Problem & Solution ---------- */
 
-.problemSolution{
-    background-color: #C4C4C4;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+@media screen and (max-width: 640px){
+    .problemSolution{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /* -- Problem -- */
 .problem{
-    width: 100%;
-    max-width: 1164px;
-    padding-top: 75px;
+    padding-top: 56px;
 }
 
 .problemDescription{
-    margin-top: 25px;
+    margin-top: 19px;
 }
 
 /* -- Solution -- */
 .solution{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .solutionDescription{
-    margin-top: 25px;
-    margin-bottom: 75px;
+    margin-top: 19px;
+    margin-bottom: 56px;
 }
 
 
@@ -382,105 +377,90 @@ p{
 
 /* -- Stage --*/
 .stageTitle{
-    margin-top: 75px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: #C4C4C4;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 56px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.stageSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.stageContent{
-    width: 100%;
-    max-width: 1164px;
+@media screen and (max-width: 640px){
+    .stageSection{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /* -- Section -- */
 .sectionTitle{
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .sectionHeading{
-    margin-top: 50px;   
+    margin-top: 38px;   
 }
 
 .sectionDescription{
-    margin-top: 25px;
+    margin-top: 19px;
 }
 
 .sectionDescription50{
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .sectionDescription75{
-    margin-top: 75px;
+    margin-top: 56px;
 }
 
 .indent90-sectionDescription{
-    margin-top: 25px;
-    margin-left: 90px;
+    margin-top: 19px;
 }
 .indent90-sectionDescription50{
-    margin-top: 50px;
-    margin-left: 90px;
+    margin-top: 38px;
 }
 
 .indent190-sectionDescription{
-    margin-top: 25px;
-    margin-left: 190px;
+    margin-top: 19px;
 }
 .indent190-sectionDescription50{
-    margin-top: 50px;
-    margin-left: 190px;
+    margin-top: 38px;
 }
 
 /* -- Lists -- */
 .listDescription{
-    margin-top: 50px; 
+    margin-top: 38px; 
 }
 
-ul.sectionList{
-    list-style-type: disc;
-    padding-left: 64px;
-    margin-top: 15px;
-    margin-bottom: 0px;   
+.sectionList{
+    margin-left: 1.5%;
+}
+
+@media screen and (max-width: 640px){
+    .sectionList{
+        margin-left: 0%;
+    }
 }
 
 li.list{
-    padding: 10px 0px 10px 23px;
+    padding: 8px 0px 8px 17px;
 }
 
 /* -- Images -- */
 .imgTitle{
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .sectionIMG{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .sectionIMGwTitle{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 25px;
+    margin-top: 19px;
 }
 
 /* -- Design Comparison -- */
 .designComparison{
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 36px;
 }
 
 .comparedElement{
@@ -488,17 +468,38 @@ li.list{
     text-align: center;
 }
 
-/* -- Divider -- */
-.rectangleDivider{
-    margin-top: 50px;
-    height: 2px;
-    max-width: 1164px;
+/* -- Info Cards -- */
+
+.infoCard{
+    max-width: 768px;
     width: 100%;
-    background-color: #C4C4C4;
+    margin-top: 56px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));   
 }
 
+.stacked-infoCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px;
+}
 
+/* -- Scroll Box -- */
 
+.scrollTitle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.scrollSection{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* -- Divider -- */
+.rectangleDivider{
+    margin-top: 38px;
+}
 
 
 /* ------------------ CUSTOM COMPONENTS --------------------*/
@@ -509,67 +510,10 @@ li.list{
 
 /* ----- Global Components ----- */
 
-.infoCard{
-    max-width: 768px;
-    width: 100%;
-    margin-top: 75px;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-    
-}
-
-
-.stacked-infoCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 75px;
-}
-
-.sendsmart-stageTitle{
+.sendsmartScroll-scrollTitle{
     background-color: #2E3538;
 }
 
-.sendsmartScroll-stageTitle{
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: #2E3538;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.scrollBox{
-    background-color: white;
-    overflow-y: auto;
-}
-
-.scrollBox::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.scrollBox::-webkit-scrollbar:vertical {
-    width: 16px;
-}
-
-.scrollBox::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.scrollSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.scrollContent{
-    width: 100%;
-    max-width: 1164px;
-}
 
 
 /* ----- Local Components ----- */
@@ -581,17 +525,11 @@ li.list{
 }
 
 .sendsmart-overview-sectionTitle{
-    text-align: center;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .sendsmartSteps-cardStack{
-    margin-bottom: 100px;
-}
-
-.sendsmartSteps{
-    margin: 36px 40px 40px; 
-
+    margin-bottom: 75px;
 }
 
 .img-sendsmartSteps{
@@ -634,31 +572,12 @@ li.list{
 
 /* -- DEFINING THE PROBLEM -- */
 
-.sendsmartSDT-scrollBox{
-    height: 565px;
-    
-    padding-bottom: 50px;
+@media screen and (max-width: 640px){
+    .sendsmartSDT-scrollBox{
+        height: 375px; 
+        padding-bottom: 38px;
+    }
 }
-
-
-.sendsmart-responseMatrix{
-    max-width: 712px;
-}
-
-/* -- TESTING & ITERATIONS -- */
-
-.sendsmart-accountIconography{
-    max-width: 542px;
-    width: 100%;
-}
-
-.sendsmart-sideNavigation{
-    max-width: 654px;
-    width: 100%;
-}
-
-
-
 
 
 /* --------------- HBO MAX --------------- */

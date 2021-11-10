@@ -145,7 +145,7 @@ b{
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
     font-weight: 400;
-    padding: 17.5px 20px;
+    padding: 17.5px 25px;
     
 }
 
@@ -161,10 +161,10 @@ b{
     background-color: rgba(2, 14, 39, 0);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    min-width: 160px;
+    min-width: 225px;
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
+    
     
     overflow: hidden;
     max-height: .25px;
@@ -277,9 +277,9 @@ footer{
 .overviewTopLeft{
     width: 55%;
     max-width: 542px;
-    min-width: 438px;
+    min-width: 427px;
     margin-right: 100px;
-    
+   
 }
 
 .overviewTitle{
@@ -580,14 +580,12 @@ li.list{
 
 /* ----- Global Components ----- */
 
-
-
-.sendsmart-stageTitle{
-    background-color: #2E3538;
+.sendsmart-projectOverview{
+    background-color: #E5F3F9;
 }
 
-.sendsmartScroll-scrollTitle{
-    background-color: #2E3538;
+.sendsmart-stageTitle{
+    background-color: #2B3B42;
 }
 
 
@@ -597,6 +595,7 @@ li.list{
 .sendsmart-overviewIMG{
     max-width: 334px;
     transform:translateY(-41px);
+    
 }
 
 .sendsmart-overview-sectionTitle{
@@ -618,7 +617,7 @@ li.list{
 /* -- PROBLEM & SOLUTION -- */
 
 .sendsmart-problemSolution {
-    background-color: #2E3538;
+    background-color: #2B3B42;
 }
 
 
@@ -654,6 +653,10 @@ li.list{
     padding-bottom: 50px;
 }
 
+.sendsmartScroll-scrollTitle{
+    background-color: #2B3B42;
+}
+
 
 .sendsmart-responseMatrix{
     max-width: 712px;
@@ -686,6 +689,17 @@ li.list{
 
 /* ----- Local Components ----- */
 
+
+/* -- PROJECT OVERVIEW -- */
+
+.hbo-projecOverview{
+    background-color: #F2EEFF;
+}
+
+.hbo-overviewTopLeft{
+    width: 50%;
+    min-width: 0px;
+}
 
 /* -- PROBLEM & SOLUTION -- */
 

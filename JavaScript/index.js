@@ -33,6 +33,15 @@ function open_dropdownContent() {
         }
 }
 
+function reverse_arrow() {
+    var x = document.getElementById("caret");
+        if (x.className === "fa fa-caret-down") {
+            x.className += " reverse";
+        }   else {
+            x.className = "fa fa-caret-down";
+        } 
+}
+
 
 
 /* Hamburger Menu navIcon ANIMATION */

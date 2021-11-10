@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style = "background-color: #F2EEFF">
+<html lang="en" style = "background-color: #F0F0F0">
 <head>
     <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style_CaseStudy.css">
     <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile-style_CaseStudy.css">
@@ -26,12 +26,11 @@
                 
                
                 <div class = "navMenu" id = "navMenu">
-                    <div class = "navItem proj" onclick = "open_dropdownContent()">
+                    <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
                         <a href = "#projects">Projects</a>
                         <div class="dropdown-content" id = "dropdown-content">
+                            <a href="/UX_UI_Portfolio/sendsmartCaseStudy.html">SendSmart</a>
                             <a href="/UX_UI_Portfolio/hboCaseStudy.html">HBO Max</a>
-                            <a href="#">Wildlife Rehab Center</a>
-                            <a href="#">Moab Music Festival</a>
                         </div>
                     </div>
 
@@ -50,15 +49,15 @@
 
     </header>
 
-    <section class = "projecOverview">
+    <section class = "hbo-projecOverview projecOverview">
         <div class = "overviewTop">
-            <div class = "overviewTopLeft">
+            <div class = "hbo-overviewTopLeft overviewTopLeft">
                 <h1 class = "overviewTitle">HBO Max TV App</h1>
                 <h4 class = "productDescription">HBO Max is a streaming service that was designed to connect viewers to quality content they enjoy. Services like these provide entertainment that many find useful for managing stress in their day-to-day lives.</h4>
             </div>
 
             <div class = "overviewTopRight">
-                <img class = "overviewIMG" src = "/UX_UI_Portfolio/Images/hbo_max.png">
+                <img class = "overviewIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - TV Logo.png">
             </div>
         
         </div>
@@ -85,6 +84,7 @@
                     </p>
                 </div>
                 
+                <div class = "team-tools">
                 <div class = "team">
                     <h3>Team</h3>
                     <p class = "teamDescription">Solo Project</p>
@@ -98,6 +98,7 @@
                         Google Suite<br>
                         Zoom
                     </p>
+                </div>
                 </div>
             
         </div>
@@ -164,7 +165,7 @@
             <div class = "sectionTitle"><h3>Affinity Diagram</h3></div>
             <div class = "sectionDescription"><p>To make sense of the data, an affinity diagram was constructed to find patterns among the various responses.</p></div>
         
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Affinity Diagram (after).jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Affinity Diagram (after).png">
  
             <div class = "rectangleDivider"></div>
 
@@ -174,7 +175,7 @@
             <div class = "sectionTitle"><h3>Empathy Map</h3></div>
             <div class = "sectionDescription"><p>Using qualitative data from user interviews, an empathy map was developed to better understand their needs.</p></div>
     
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Empathy Map.jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Empathy Map.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -184,7 +185,7 @@
             <div class = "sectionTitle"><h3>User Persona</h3></div>
             <div class = "sectionDescription"><p>While users of HBO Max come from many different backgrounds, a single persona was created as a way to capture the most general experiences individuals have with the application.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - User Persona.png">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - User Persona.png" style = "filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))">
 
         </div>
     </section>
@@ -213,7 +214,7 @@
             <div class = "sectionTitle"><h3>Ideation</h3></div>
             <div class = "sectionDescription"><p>How might we design a feature and/or process in HBO Max that will help afford viewers quick and easy access to content they enjoy? To generate ideas on how to approach this problem, an excercise using the “I like, I wish, what if?” method was performed.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Ideation.jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Ideation.png">
 
             <div class = "rectangleDivider"></div>
             
@@ -223,7 +224,7 @@
             <div class = "sectionTitle"><h3>Feature Prioritization Matrix</h3></div>
             <div class = "sectionDescription"><p>Solutions generated in the ideation excercise were placed into a priority matrix for the purpose of narrowing the scope of the project. The goal was to focus on improving a single feature/process, which as a result, would have a high, positive impact on viewers, and at the same time, be simple enough to implement as a solution.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Feature Prioritization Matrix.jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Feature Prioritization Matrix.png">
 
             <div class = "matrixDescription"><p>By using this method, it was determined that affording viewers access to an episode index within the “Continue Watching” pathway would be the best solution in terms of impact and complexity.</p></div>
             
@@ -235,7 +236,7 @@
             <div class = "sectionTitle"><h3>Current User Journey</h3></div>
             <div class = "sectionDescription"><p>To help illustrate the pain points viewers experience when attempting to access an episode index after selecting their desired content under “Continue Watching”, a user journey map showcasing the current task flow was constructed.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - User Journey Map.png">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - User Journey Map.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -244,7 +245,7 @@
             <div class = "sectionTitle"><h3>Competitor Analysis</h3></div>
             <div class = "sectionDescription"><p>Before moving onto the design stage of the process, a competitor analysis was performed to learn more about how other video-streaming services handle this problem.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Competitor Analysis 2 (continue watching feature).jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Competitor Analysis 2 (continue watching feature) 2.png">
 
             <div class = "listDescription"><p>Key Takeaways:</p></div>
             <ul class = "sectionList">
@@ -260,7 +261,7 @@
     </section>
 
     <!---------- DESIGN & PROTOTYPE ---------->
-    
+
     <div class = "hbo-stageTitle stageTitle"><h2>Design & Prototype</h2></div>
     
     <section class = "stageSection">
@@ -275,10 +276,10 @@
             <div class = "sectionDescription"><p>One benefit with the current user flow for the “Continue Watching” pathway is it allows viewers to play content with just one click from the homepage. This route is much quicker than alternative pathways, as illustrated below. The drawback is an episode index is only made available before the content begins playing, as can be seen in the alternative pathway user flow.</p></div>
 
             <div class = "imgTitle"><p>“Continue Watching”</p></div>
-            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max - Current User Flow (continue watching).jpg">
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - User Flow - Continue Watching Current.png">
 
             <div class = "imgTitle"><p>Alternative Pathways</p></div>
-            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max - User Flow (alternative paths).jpg">
+            <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - User Flow - Alternative Paths.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -293,7 +294,7 @@
                 <li class = "list"><p>Affords ability to bypass an episode index by implementing a “Next/Previous” option</p></li>
             </ul>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - User Flow (ideal).jpg">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - User Flow - Ideal.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -303,7 +304,7 @@
             <div class = "sectionDescription"><p>Once the proposed solution was developed, sketches of the new flow were made.</p></div>
 
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Sketches.png">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Sketches.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -312,7 +313,7 @@
             <div class = "sectionTitle"><h3>Low-Fidelity Digital Wireframes</h3></div>
             <div class = "sectionDescription"><p>Low-fidelity digital wireframes were designed and prototyped.</p></div>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Lo-Fi Digital Wireframes.png">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Lo-Fi Digital Wireframes.png">
 
             <div class = "listDescription"><p>Three items were added to the pop-up menu interface:</p></div>
             <ul class = "sectionList">
@@ -321,21 +322,7 @@
                 <li class = "list"><p>Play Next</p></li>
             </ul>
 
-            <div class = "designComparison">
-                <div class = "comparedElement">
-                    <p class = comparedIMGTitle>Lo-Fi Redesign</p>
-                
-                    <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max - Menu Redesign.png">
-
-
-                </div>
-                <div class = "comparedElement">
-                    <p class = comparedIMGTitle>Original Design (lo-fi recreation)</p>
-
-                    <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/HBO Max - Original Menu.png">
-                    
-                </div>
-            </div>
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Design Comparison.png">
 
         </div>
     </section>
@@ -343,7 +330,7 @@
 
     <!---------- TESTING & ITERATION ---------->
 
-    <div class = "stageTitle"><h2>Testing & Iteration</h2></div>
+    <div class = "hbo-stageTitle stageTitle"><h2>Testing & Iteration</h2></div>
     <section class = "stageSection">
         
 
@@ -368,16 +355,7 @@
                 <li class = "list"><p>Restart current episode being played</p></li>
             </ul>
 
-            <div class = "testingIMGs">
-                <div class = "testIMGLeft">
-                    <img class = "testIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Testing Demonstration.jpg">
-                </div>
-
-                <div class = "testIMGRight">
-                    <img class = "testIMG" src = "/UX_UI_Portfolio/Images/HBO Max - participant a.png">
-                    <img class = "testIMG" src = "/UX_UI_Portfolio/Images/HBO Max - participant b.png">
-                </div>
-            </div>
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Zoom Testing.png">
 
             <div class = "rectangleDivider"></div>
 
@@ -433,7 +411,7 @@
                 <li class = "list"><p>Pop-menu will only fade after the viewer presses “up” on the contoller/remote</p></li>
             </ul>
 
-            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max - Menu Iteration.png">
+            <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - Menu Iteration.png">
 
         </div>
     </section>
@@ -441,7 +419,7 @@
 
     <!---------- REFLECTION & NEXT STEPS ---------->
 
-    <div class = "stageTitle"><h2>Reflection & Next Steps</h2></div>
+    <div class = "hbo-stageTitle stageTitle"><h2>Reflection & Next Steps</h2></div>
     <section class = "stageSection reflection-stageSection">
       
 

@@ -510,17 +510,17 @@ li.list{
 
 /* ----- Global Components ----- */
 
-.sendsmartScroll-scrollTitle{
-    background-color: #2E3538;
-}
 
 
 
 /* ----- Local Components ----- */
 
 /* -- PROJECT OVERVIEW -- */
+
+
+
 .sendsmart-overviewIMG{
-    max-width: 250px;
+    max-width: 200px;
     transform:translateY(0px);
 }
 
@@ -591,6 +591,12 @@ li.list{
 
 /* ----- Local Components ----- */
 
+@media screen and (min-width: 641px){
+.hbo-overviewTopLeft{
+    width: 60%;
+    min-width: 0px;
+}
+}
 
 /* -- PROBLEM & SOLUTION -- */
 

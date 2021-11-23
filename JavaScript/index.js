@@ -33,6 +33,15 @@ function open_dropdownContent() {
         }
 }
 
+function close_dropdownContent() {
+    var x = document.getElementById("dropdown-content");
+        if (x.className === "dropdown-content responsive") {
+            x.className -= " responsive";
+        }   else {
+            x.className = "dropdown-content responsive";
+        }
+}
+
 function reverse_arrow() {
     var x = document.getElementById("caret");
         if (x.className === "fa fa-caret-down") {

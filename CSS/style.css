@@ -137,7 +137,7 @@ h1{
     margin-right:-10px;
     font-size: 16px;
     opacity: .5;
-    transition: transform 2s;
+    transition: transform 1.8s;
 }
 
 
@@ -192,12 +192,12 @@ h1{
 }
 
 .proj:hover .fa-caret-down {
-    transform: rotateX(180deg);
+    transform: rotate(-180deg);
     transition: transform .4s;
 }
 
-
 }
+
 /* -------------------- HOME / MAIN --------------------*/
 
 
@@ -321,6 +321,10 @@ h1{
     font-weight: 600;
 }
 
+.projectDescription{
+    margin-top: 29px;
+}
+
 .myProjects{
     background-color: #9ABCEA;
    
@@ -337,12 +341,12 @@ h1{
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
-    
+    padding-bottom: 200px;
 }
 
 .projectCard{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: white;
     height: 454px;
     width: 100%;
@@ -354,35 +358,56 @@ h1{
     
 }
 
+.projectCard-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1007px;
+    margin: auto 50px;
+    
+}
+
 .projectInfo{
     margin-top: auto;
     margin-bottom: auto;
     width: 481px;
-    margin-left: 50px;
-    margin-right: 50px;
+    
 }
 
-    /* HBO Max */
+.projectIMG{
+    margin: auto;
+}
+
+.projectCard-button{
+    margin-top: 49px;
+}
+
+
+/* SendSmart */
+
+.sendsmartCard{
+    background-color: #E4F0FC
+}
+
+.sendsmartIMG{
+    margin-left: 6.7%;
+    margin-right: 0;
+}
+
+.sendsmart-img{
+    max-width: 375px;
+    width: 100%;
+}
+
+
+/* HBO Max */
 
 .hboCard{
     background-color: #F2EEFF;
 }
 
-.hboInfo{
-    margin-right: 0px;
-}
-
-
-
 .hboIMG{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4));
-    
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4));   
 }
 
 .hbo-img{
@@ -390,88 +415,11 @@ h1{
     width: 100%;
 }
 
-
-
-.hboDescription{
-    margin-top: 29px;
-}
-
-.hboButton{
-    margin-top: 49px;
-}
-
-    /* WRCNU */
-
-.wrcnuCard{
-    background-color: #E4F0FC;
-}
-
-.wrcnuInfo{
-    margin-left: 0;
-    width: 481px;
-
+.hboInfo{
+    margin-left: 6.7%;
 }
 
 
-.wrcnuIMG{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
-}
-
-.wrcnu-img{
-    max-width: 390px;
-    width: 100%;
-    
-}
-
-.wrcnuDescription{
-    margin-top: 20px;
-}
-
-.wrcnuButton{
-    margin-top: 32px;
-}
-
-    /* Moab Music Festival */
-
-.moabCard{
-    background-color: #F1E1DC;
-    margin-bottom: 200px;
-}
-
-.moabInfo{
-    margin-right: 0px;
-}
-
-
-.moabDescription{
-    margin-top: 20px;
-}
-
-.moabButton{
-    margin-top: 32px;
-}
-
-.moabIMG{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 3%;
-    padding-left: 50px;
-    padding-right: 50px;
-    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, .5));
-}
-
-.moab-img{
-    max-width: 510px;
-    width: 100%;
-}
 
 
 

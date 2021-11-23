@@ -14,6 +14,8 @@
 
 
 <body>
+
+    <!---------- NAVIGATION BAR ---------->
     <header>
         <nav class = "flexnav">
             <div class = "menuItems">
@@ -30,12 +32,12 @@
                     <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
                         <a href = "#projects" class = "navItem-projects">Projects <i class="fa fa-caret-down" id = "caret"></i></a>
                         <div class="dropdown-content" id = "dropdown-content">
-                            <a href="/UX_UI_Portfolio/sendsmartCaseStudy.html">SendSmart</a>
-                            <a href="/UX_UI_Portfolio/hboCaseStudy.html">HBO Max</a>
+                            <a href="/UX_UI_Portfolio/sendsmartCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">SendSmart</a>
+                            <a href="/UX_UI_Portfolio/hboCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">HBO Max</a>
                         </div>
                     </div>
 
-                    <div class = "navItem"><a href = "#resume">Resume</a></div> 
+                    <div class = "navItem"><a href = "/UX_UI_Portfolio/PDFs/Resume.pdf" target = "_blank">Resume</a></div> 
                     <div class = "navItem"><a href = "#about">About</a></div>
                     
                 </div>
@@ -50,9 +52,8 @@
 
     </header>
 
- 
-   
 
+    <!---------- HERO SECTION ---------->
     <section class = "heroImg">
         <div class = "content">
             <h1 class = "intro">Hi, I'm Lucas!</h1>
@@ -68,6 +69,8 @@
         </div>
     </section>
 
+
+    <!---------- SKILLS SECTION ---------->
     <section class = "mySkills">
         <h2 class = "skills">Skills</h2>
 
@@ -96,66 +99,57 @@
     </section>
 
 
+    <!---------- PROJECTS SECTION ---------->
     <section class = "myProjects" id = "projectsSection">
         <h2 class = "projects">Projects</h2>
         
         <div class = "projectCards-Container">
 
+            <div class = "projectCard sendsmartCard">
+                <div class = "projectCard-content">
+                    <div class = "projectInfo sendsmartInfo">
+                        <h2 class = "projectName">SendSmart</h2>
+                        <h3 class = "projectSubHead">Message Detection | Web App</h3>
+                        <p class = "projectDescription">The objective was to increase dealership representatives’ sensitivity toward detecting their customer messages by implementing personalized features and identifiers into the existing design.</p>
+
+                        <div class = "projectCard-button">
+                            <a href = "/UX_UI_Portfolio/sendsmartCaseStudy.html"><button class = "projectButton">View Project</button></a>
+                        </div>
+                    </div>
+ 
+                    <div class = "projectIMG sendsmartIMG"> 
+                        <img class = "sendsmart-img" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SSlogo.png" width = 495px>
+                    </div>
+                </div>
+                
+            </div>
+
             <div class = "projectCard hboCard">
-                <div class = "projectInfo hboInfo">
-                    <h2 class = "projectName hboProject-Name">HBO Max</h2>
-                    <h3 class = "userFlow">User Flow Redesign</h3>
-                    <p class = "hboDescription">The goal was to improve the user flow for viewers by affording them access to related episodes of a TV show after having selected a show to watch under “Continue Watching”.</p>
-
-                    <div class = "hboButton">
-                        <a href = "/UX_UI_Portfolio/hboCaseStudy.html"><button class = "projectButton">View Project</button></a>
+                <div class = "projectCard-content">
+                    <div class = "projectIMG hboIMG"> 
+                        <img class = "hbo-img" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - TV Logo.png" width = 495px>
                     </div>
 
-                </div>
-                <div class = "img hboIMG"> 
-                    <img class = "hbo-img" src = "/UX_UI_Portfolio/Images/HBO Max/HBO Max - TV Logo.png" width = 495px>
-                </div>
-            </div>
+                    <div class = "projectInfo hboInfo">
+                        <h2 class = "projectName">HBO Max</h2>
+                        <h3 class = "projectSubHead">User Flow | TV App</h3>
+                        <p class = "projectDescription">The goal was to improve the user flow for viewers by affording them access to related episodes of a TV show after having selected a show to watch under “Continue Watching”.</p>
 
-            <div class = "projectCard wrcnuCard">
-                <div class = "img wrcnuIMG"> 
-                    <img class = "wrcnu-img" src = "/UX_UI_Portfolio/Images/wrcnu.png" width = 390px>
-                </div>
-
-                <div class = "projectInfo wrcnuInfo">
-                    <h2 class = "projectName wrcnuHeader">Wildlife Rehab Center</h2>
-                    <h3 class = "mobileRedesign">Mobile Website Redesign</h3>
-                    <p class = "wrcnuDescription">Our aim was to redesign the mobile website so individuals could gain quick access to the information they need to judge whether a wild animal needs aid, and if so, how to provide said aid and/or find help.</p>
-
-                    <div class = "wrcnuButton">
-                        <button class = "projectButton">View Project</button>
-                    </div>  
-                </div>
-            </div>
-
-            <div class = "projectCard moabCard">
-                <div class = "projectInfo moabInfo">
-                    <h2 class = "projectName moabHeader">Moab Music Festival</h2>
-                    <h3 class = "navRedesign moab-subHeader">Navigation Layout Redesign</h3>
-                    <p class = "moabDescription">Our objective was to redesign the homepage layout and improve the navigation on mobile/desktop website for the purpose of making information easier to access and to entice concert goers to buy tickets.</p>
-                    
-                    <div class = "moabButton">
-                        <button class = "projectButton">View Project</button>
+                        <div class = "projectCard-button">
+                            <a href = "/UX_UI_Portfolio/hboCaseStudy.html"><button class = "projectButton">View Project</button></a>
+                        </div>
                     </div>
-                    
                 </div>
-
-                <div class = "img moabIMG"> 
-                    <div> <img class = "moab-img" src = "/UX_UI_Portfolio/Images/moab_music_festival.png" width = 510px> </div>
-                </div>
+                
             </div>
+            
 
         </div>
 
     </section>
 
            
-        
+    <!---------- FOOTER ---------->    
     <footer>
         <div class = "contact">
             <h2 class = "collaborate">Let's Collaborate!</h2>
@@ -165,7 +159,7 @@
         
         <div class = "footer-iconsContainer">
             <div class = "footer-icons">
-                <a href = "#mail"><img class = "mail" src="/UX_UI_Portfolio/Icons/mail.png" width = 60px></a>
+                <a href = "mailto:lucas.m.epperson@gmail.com"><img class = "mail" src="/UX_UI_Portfolio/Icons/mail.png" width = 60px></a>
             </div>
             <div class = "footer-icons">
                 <a href = "https://www.linkedin.com/in/lucas-epperson-ba06125b"><img class = "linkedin" src="/UX_UI_Portfolio/Icons/linkedin.png" width = 48px></a>

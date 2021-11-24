@@ -290,7 +290,7 @@ p2{
 
 
 
-/* Projects Section */
+/* ---------- Projects Section ---------- */
 
 .projectButton{
     padding: 12px 29px;
@@ -340,10 +340,7 @@ p2{
     margin-top: 37px;
 }
 
-.projectIMG{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 /* SendSmart */
@@ -359,7 +356,6 @@ p2{
 
 .sendsmart-img{
     max-width: 180px;
-    
 }
 
 

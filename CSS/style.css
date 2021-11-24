@@ -137,7 +137,8 @@ h1{
     margin-right:-10px;
     font-size: 16px;
     opacity: .5;
-    transition: transform 1.8s;
+    transition: transform .85s;
+    transition-delay: .4s;
 }
 
 
@@ -193,7 +194,7 @@ h1{
 
 .proj:hover .fa-caret-down {
     transform: rotate(-180deg);
-    transition: transform .4s;
+    transition: transform .35s;
 }
 
 }
@@ -375,7 +376,10 @@ h1{
 }
 
 .projectIMG{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .projectCard-button{

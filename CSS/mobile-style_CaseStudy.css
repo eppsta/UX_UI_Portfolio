@@ -566,11 +566,7 @@ li.list{
 
 
 
-/* -- PROBLEM & SOLUTION -- */
 
-.sendsmart-problemSolution {
-    background-color: #2E3538;
-}
 
 
 /* -- USER RESEARCH -- */
@@ -611,9 +607,6 @@ li.list{
 
 /* ----- Global Components ----- */
 
-.hbo-stageTitle{
-    background-color: #2E215A;
-}
 
 
 /* ----- Local Components ----- */
@@ -625,11 +618,7 @@ li.list{
 }
 }
 
-/* -- PROBLEM & SOLUTION -- */
 
-.hbo-problemSolution {
-    background-color: #2E215A;
-}
 
 
 /* -- USER RESEARCH -- */

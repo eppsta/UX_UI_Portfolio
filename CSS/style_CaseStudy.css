@@ -153,7 +153,8 @@ b{
     margin-right:-10px;
     font-size: 16px;
     opacity: .5;
-    transition: transform 1.8s;
+    transition: transform .85s;
+    transition-delay: .4s;
 }
 
 
@@ -209,7 +210,7 @@ b{
 
 .proj:hover .fa-caret-down {
     transform: rotate(-180deg);
-    transition: transform .4s;
+    transition: transform .35s;
 }
 
 }
@@ -697,7 +698,7 @@ li.list{
 /* ----- Global Components ----- */
 
 .hbo-stageTitle{
-    background-color: #2E215A;
+    background-color: #302B46;
 }
 
 
@@ -718,7 +719,7 @@ li.list{
 /* -- PROBLEM & SOLUTION -- */
 
 .hbo-problemSolution {
-    background-color: #2E215A;
+    background-color: #302B46;
 }
 
 

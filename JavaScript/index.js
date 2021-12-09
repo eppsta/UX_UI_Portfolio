@@ -21,7 +21,6 @@ function open_navMenu() {
 
 }
 
-
 /* Open/Close Dropdown Content */
 
 function open_dropdownContent() {

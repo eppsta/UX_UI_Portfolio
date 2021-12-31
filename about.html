@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" style = "background-color: #718397">
+<head>
+    <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Portfolio</title>
+</head>
+
+
+<body>
+
+    <!---------- NAVIGATION BAR ---------->
+    <header>
+        <nav class = "flexnav" id = "nav">
+            <div class = "menuItems">
+                <div class = "logoHome">
+                    <a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
+                </div>
+
+                <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
+                    <div class="navIcon_burger"></div>
+                </div>
+               
+                
+                <div class = "navMenu" id = "navMenu">
+                    <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
+                        <a class = "navItem-projects">Projects <i class="fa fa-caret-down" id = "caret"></i></a>
+                        <div class="dropdown-content" id = "dropdown-content">
+                            <a href="/UX_UI_Portfolio/sendsmartCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">SendSmart</a>
+                            <a href="/UX_UI_Portfolio/hboCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">HBO Max</a>
+                        </div>
+                    </div>
+
+                    <div class = "navItem"><a href = "/UX_UI_Portfolio/PDFs/Resume.pdf" target = "_blank">Resume</a></div> 
+                    <div class = "navItem"><a href = "/UX_UI_Portfolio/about.html">About</a></div>
+                    
+                </div>
+                
+                
+                
+
+            </div>
+                     
+
+        </nav>
+
+    </header>
+
+
+
+    <!---------- ABOUT ---------->
+    <div class = "aboutSection">
+
+        <div class = "aboutTitle"><h1>About Me</h1></div>
+
+        <div class = "aboutContent">
+
+            <div class = "about1"><p>Growing up, I used to make short films with friends and wondered what life would be like as a filmmaker. This interest carried over into my early adult life where I quickly discovered how much of a collaborative effort it was to plan, shoot, and edit a film. Developing soft skills and learning to work with others was key to successfully completing the projects I worked on. Although this remained a hobby, the skills I developed led to commercial work in photography, where eventually I was taken on as a full-time product photographer. While I knew this wasn’t exactly what I wanted to do, it afforded me a creative outlet. It was during this time I decided to go back to school and pursue other interests of mine - psychology and philosophy.</p></div>
+
+            <div class = "about2">
+                <div class = "about2A">
+                    <div class = "about2Ai"><p>One class I took as part of my human factors / psychology program focused on the nature of human error and why it occurs when people interact with systems. One common perspective - known as the “bad apple” theory - emphasizes the human element as being the dominant contributor of failure. While this line of thinking is straightforward and simple to understand, focusing on the shortcomings of an individual doesn’t seem to get at the root cause of an underlying problem. An alternative perspective places emphasis on the system as a whole and considers human error to be a symptom of poor design, not the main cause of failure. For me, this new view on human error led to a radical shift in the way I think about everyday products, and how they interface with people. It wasn’t long after this I discovered the field of user experience, or UX.</p></div>
+                    <div class = "about2Aii"><p>What intrigues me the most about UX is the evidence-based strategy it deploys when designing a product and/or system. As someone who has spent time as both a photographer and a research assistant (in a psychology lab at the university), I can appreciate the methods involved for arriving at the appropriate design solution. To me, this is a perfect area of exploration that meets at the intersection of science and art.</p></div>
+                </div>
+
+                <div class = "about2B">
+                    <img class = "about-img" src = "/UX_UI_Portfolio/Images/IMGtemplate.png">
+                </div>
+            
+            </div>
+
+        
+
+            
+
+        
+        
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+    <!---------- FOOTER ---------->    
+    <footer>
+        <div class = "contact">
+            <h2 class = "collaborate">Let's Collaborate!</h2>
+            <p class = "questions">Have questions? Feel free to reach out!</p>
+        </div>
+        
+        
+        <div class = "footer-iconsContainer">
+            <div class = "footer-icons">
+                <a href = "mailto:lucas.m.epperson@gmail.com"><img class = "mail" src="/UX_UI_Portfolio/Icons/mail.png" width = 60px></a>
+            </div>
+            <div class = "footer-icons">
+                <a href = "https://www.linkedin.com/in/lucas-epperson-ba06125b"><img class = "linkedin" src="/UX_UI_Portfolio/Icons/linkedin.png" width = 48px></a>
+            </div>
+        </div>
+
+        <div class = "copyright">
+            <p2>Copyright © 2021 - All Rights Reserved</p2>
+        </div>
+        
+    </footer>

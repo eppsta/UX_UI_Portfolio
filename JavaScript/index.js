@@ -1,13 +1,11 @@
 
 
-/* Scroll Projects Function */
 
 function scrollProjects() {
     var elem = document.getElementById("projectsSection");
     elem.scrollIntoView();
+    
 }
-
-
 
 /* Open/Close Hamburger Menu */
 
@@ -20,6 +18,7 @@ function open_navMenu() {
         }
 
 }
+
 
 /* Open/Close Dropdown Content */
 
@@ -62,7 +61,6 @@ function animate_navIcon() {
                 x.className = "navIcon"
             }
 }
-
 
 
 

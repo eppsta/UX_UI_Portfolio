@@ -135,6 +135,10 @@ b{
 
 /* Nav Items */
 
+.proj{
+    cursor: pointer;
+}
+
 .navMenu{
     display: flex;  
 }
@@ -307,7 +311,6 @@ footer{
 
 /* Top Right */
 .overviewTopRight{
-    width: 50%;
     display: flex;
     justify-content: right;
     align-items: center;  
@@ -613,6 +616,10 @@ li.list{
     
 }
 
+.sendsmart-overviewTopRight{
+    margin-right: 0px;
+}
+
 .sendsmart-overview-sectionTitle{
     text-align: center;
     margin-top: 100px;
@@ -714,6 +721,10 @@ li.list{
 .hbo-overviewTopLeft{
     width: 50%;
     min-width: 0px;
+}
+
+.hbo-overviewTopRight{
+    width: 50%;
 }
 
 /* -- PROBLEM & SOLUTION -- */

@@ -119,6 +119,10 @@ h1{
 
 /* Nav Items */
 
+.proj{
+    cursor: pointer;
+}
+
 .navMenu{
     display: flex;  
 }
@@ -476,11 +480,9 @@ footer{
 
 
 
-/* -------------------- CASE STUDIES -------------------- */
+/* -------------------- ABOUT --------------------*/
 
-/*---------- GENERAL CASE STUDY COMPONENTS ----------*/
-
-.stageSection{
+.aboutSection{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,301 +490,53 @@ footer{
     padding-right: 50px;
 }
 
-.stageTitle{
-    margin-top: 75px;
-    width: 100%;
-    text-align: center;
+.aboutTitle{
+    margin-top: 221px;
     color: white;
-    background-color: #C4C4C4;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-.stageContent{
+.aboutContent{
     width: 100%;
     max-width: 1164px;
-}
 
-
-.sectionTitle{
-    margin-top: 50px;
-}
-
-.descriptionHeading{
-    margin-top: 50px;
-}
-
-.sectionDescription{
-    margin-top: 25px;
-}
-
-.imgTitle{
-    margin-top: 50px;
-}
-
-.sectionIMG{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 50px;
-}
-
-.sectionIMGwTitle{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 25px;
-}
-
-.designComparison{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
-
-.comparedElement{
-    width: 48%;
-    text-align: center;
-}
-
-.listDescription{
-    margin-top: 50px;
-    line-height: 25px;
-}
-
-ul.sectionList{
-    list-style-type: disc;
-    padding-left: 64px;
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
-
-li.list{
-    line-height: 50px;
-    padding-left: 23px;
-    
-}
-
-.rectangleDivider{
-    margin-top: 50px;
-    height: 2px;
-    max-width: 1164px;
-    background-color: #C4C4C4;
-}
-
-
-/* ------------------ CUSTOM COMPONENTS --------------------*/
-
-/* --------------- HBO MAX --------------- */
-
-/* ----- Global Components ----- */
-
-.hbo-stageTitle{
-    background-color: #2E215A;
-}
-
-
-
-
-/* PROJECT OVERVIEW */
-
-
-
-.hbo-projecOverview{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    
-}
-
-.hbo-overviewTop{
-    display: flex;
-    padding-top: 198px;
-    max-width: 1164px;
-   
-
-}
-
-.hbo-overviewTopLeft{
-    width: 40.4%;
-    min-width: 351px;
-    
-}
-
-.hbo-overviewTitle{
-    line-height: 52px;
-}
-
-.hbo-productDescription{
-    margin-top: 22px;
-}
-
-h4.hbo-productDescription{
-    font-weight: 400;
-}
-
-.hbo-overviewTopRight{
-    max-width: 500px;
-    margin-left: 16.67%;
-}
-
-.hbo-overviewIMG{
-    width: 100%;
-}
-
-.hbo-overviewBottom{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.hbo-projectDescription{
-    display: flex;
-    text-align: left;
-    width: 100%;
-    max-width: 1164px;
-    justify-content: space-between;
-    
-}
-
-.hboRole{
-    width: 22.34%;
-}
-
-.hbo-roleDescription{
-    margin-top: 22px;
-
-}
-
-.hboTeam{
-    width: 22.34%;
-}
-.hbo-teamDescription{
-    margin-top: 22px;
-}
-
-.hbo-toolsDescription{
-    margin-top: 22px;
-    margin-right: 102px;
-}
-
-/* -- Problem and Proposed Solution -- */
-
-.problemSolution{
-    
-    background-color: #2E215A;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
-.theProblem{
-    width: 100%;
-    max-width: 1164px;
-    padding-top: 75px;
-}
-
-.problemDescription{
-    margin-top: 25px;
-}
-
-.theSolution{
-    width: 100%;
-    max-width: 1164px;
-    margin-top: 50px;
-}
-
-.solutionDescription{
-    margin-top: 25px;
-    margin-bottom: 75px;
-}
-
-
-
-
-/* -- USER RESEARCH --*/
-/* User Quotes */
-
-.quotes{
-    margin-top: 25px;
-}
-
-
-/* -- DEFINITION & IDEATION -- */
-/* Problem Statement */
-
-.problemStatement{
-    margin-top: 50px;
-}
-
-
-/* Feature Prioritization Matrix */
-
-.matrixDescription{
-    margin-top: 50px
-}
-
-
-/* -- DESIGN & PROTOTYPE --/
-/* Proposed User Flow */
-
-.featuresDescription{
-    margin-top: 25px;
-    line-height: 25px;
-}
-
-
-
-/* -- Testing & Iteration --/
-/* Usability Testing*/
-
-.testingIMGs{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
-
-.testIMGLeft{
-    width: 44.6%;
-}
-
-.testIMGRight{
-    width: 51.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.testIMG{
-    width: 100%;
-    max-width: 1164px;
-}
-
-
-/* Usability Testing*/
-
-.feedbackList{
-    margin-top: 25px;
-    line-height: 25px;
-}
-
-
-/* Iterations*/
-
-.iterationsList{
-    margin-top: 25px;
-    line-height: 25px;
-}
-
-/* Reflections & Next Steps */
-
-.reflection-stageSection{
+    margin-top: 100px;
     margin-bottom: 200px;
+
 }
+
+.about2{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about2A{
+    width: 65%;
+    margin-right: 10%;
+}
+
+.about2Aii{
+    margin-top: 50px;
+}
+
+
+.about2B{
+    width: 45%;
+}
+
+.about-img{
+    max-width: 538px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+

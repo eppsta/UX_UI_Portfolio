@@ -53,153 +53,218 @@
     </header>
 
 
+    <!---------- CASE STUDY NAVIGATION ---------->
+
+    <div class = "csNav">
+        <div class = "compass" onclick = "open_map()"></div>
+      
+        <div class = "map" id = "map">
+          
+            <ul class = "sectionMap sendsmart-sectionMap">
+                <li class = "selected">SendSmart</li>
+                <li>Problem & Solution</li>
+                <li>User Research</li>
+                <li>Defining the Problem</li>
+                <li>Ideation</li>
+                <li>Design & Prototype</li>
+                <li>Testing & Iterations</li>
+                <li>Reflection & Next Steps</li>
+            </ul>
+          
+            <ul class = "subsectionMap sendsmart-subsectionMap" id = "subsectionMap">
+                <li class = "selected">Project Overview</li>
+                <li>How does SendSmart work?</li>
+                <li>Proposal</li>
+                <li>User Surveys & Interviews</li>
+                <li>Affinity Diagram</li>
+                <li>Empathy Maps</li>
+                <li>User Personas</li>
+                <li>Signal Detection Theory</li>
+                <li>SDT Application to SendSmart</li>
+                <li>Problem Statement</li>
+                <li>How Might We ... ?</li>
+                <li>Current UI Design</li>
+                <li>“I Like, I Wish, What If?”</li>
+                <li>Feature Prioritization Matrix</li>
+                <li>Competitor / Familiar Analysis</li>
+                <li>Task Flows</li>
+                <li>Sketches & Markups</li>
+                <li>Digital Wireframes</li>
+                <li>Usability Testing</li>
+                <li>Analysis & Feedback</li>
+                <li>Iterations</li>
+                <li>Reflection / Limitations</li>
+                <li>Next Steps</li>
+            </ul>
+          
+          
+        </div>
+      </div>
+
+
 
     <main>
-    <!---------- PROJECT OVERIEW ---------->
-    <section class = "sendsmart-projectOverview projecOverview">
-        <div class = "overviewTop">
-            <div class = "overviewTopLeft">
-                <h1 class = "overviewTitle">SendSmart Web App</h1>
-                <h4 class = "productDescription">SendSmart is a web application utilized by Auto Dealerships to <strong>increase customer engagement through automated messaging</strong>. According to SendSmart, their solution can be expected to <strong>double web lead response rates</strong>.</h4>
-            </div>
 
-            <div class = "sendsmart-overviewTopRight overviewTopRight">
-                <img class = "sendsmart-overviewIMG overviewIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SSlogo.png">
-            </div>
+        <!---------- SENDSMART ---------->
+        <section class = "sendsmart-projectOverview projecOverview" id = "S0">
+
+            <subsection id = "ss0" class = "overviewContent">
+
+                <div class = "overviewTop">
+                    <div class = "overviewTopLeft">
+                        <h1 class = "overviewTitle">SendSmart Web App</h1>
+                        <h4 class = "productDescription">SendSmart is a web application utilized by Auto Dealerships to <strong>increase customer engagement through automated messaging</strong>. According to SendSmart, their solution can be expected to <strong>double web lead response rates</strong>.</h4>
+                    </div>
+
+                    <div class = "sendsmart-overviewTopRight overviewTopRight">
+                        <img class = "sendsmart-overviewIMG overviewIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - SSlogo.png">
+                    </div>
         
-        </div>
-
-        <div class = "overviewBottom">
-            
-                <div class = "role">
-                    <h3>Role</h3>
-                    <p class = "roleDescription">
-                        <strong>UX Research & Design</strong><br><br>
-                        User Surveys & Interviews<br>
-                        Affinity Diagram<br>
-                        Empathy Map<br>
-                        User Personas<br>
-                        Signal Detection<br>
-                        Problem Statement<br>
-                        Ideation<br>
-                        Feature Prioritization<br>
-                        Competitor Analysis<br>
-                        Task Flows<br>
-                        Wireframes & Prototype<br>
-                        Usability Testing & Analysis<br>
-                        Iterations
-                    </p>
                 </div>
+
+                <div class = "overviewBottom">
+            
+                    <div class = "role">
+                        <h3>Role</h3>
+                        <p class = "roleDescription">
+                            <strong>UX Research & Design</strong><br><br>
+                            User Surveys & Interviews<br>
+                            Affinity Diagram<br>
+                            Empathy Map<br>
+                            User Personas<br>
+                            Signal Detection<br>
+                            Problem Statement<br>
+                            Ideation<br>
+                            Feature Prioritization<br>
+                            Competitor Analysis<br>
+                            Task Flows<br>
+                            Wireframes & Prototype<br>
+                            Usability Testing & Analysis<br>
+                            Iterations
+                        </p>
+                    </div>
                 
                 
-                <div class = "team-tools">
-                <div class = "team">
-                    <h3>Team</h3>
-                    <p class = "teamDescription">Solo Project</p>
-                </div>
+                    <div class = "team-tools">
+                        <div class = "team">
+                            <h3>Team</h3>
+                            <p class = "teamDescription">Solo Project</p>
+                        </div>
             
-                <div class = "tools">
-                    <h3>Tools</h3>
-                    <p class = "toolsDescription">
-                        Figma<br>
-                        Miro<br>
-                        Google Suite<br>
-                        Zoom
-                    </p>
-                </div>
-                </div>
+                        <div class = "tools">
+                            <h3>Tools</h3>
+                            <p class = "toolsDescription">
+                                Figma<br>
+                                Miro<br>
+                                Google Suite<br>
+                                Zoom
+                            </p>
+                        </div>
+                    </div>
                 
             
-        </div>
+                </div>
 
-        <div class = "rectangleDivider"></div>
+                <div class = "rectangleDivider"></div>
 
-        <!-- SendSmart Steps -->
-
-        <div class = "stageContent">
-
-            <div class = "sendsmart-overview-sectionTitle sectionTitle"><h3 class = "regular">How does SendSmart work?</h3></div>
-
-            <div class = "sendsmartSteps-cardStack stacked-infoCards">
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 1.png"></img>
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 2.png"></img>
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 3.png"></img>
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 4.png"></img>     
-            </div>
-        </div>
-        
-    </section>
-
-    <!---------- PROBLEM & SOLUTION ---------->
-
-    <section class = "sendsmart-problemSolution problemSolution">
-        <div class = "problem">
-            <h2>The Problem</h2>
-            <p class = "problemDescription">Dealership representatives have reported <strong>SendSmart doesn't allow them to organize and filter their messages and notifications</strong>. This makes it <strong>difficult to detect and navigate their assigned customers</strong>, which could result in <strong>lost opportunities</strong>.</b>.
-            </p>
-        </div>
-        <div class = "solution">
-            <h2>Proposed Solution</h2>
-            <p class = "solutionDescription"><strong>Increase dealership representatives’ sensitivity toward detecting their assigned customers</strong> by providing ways to discern them from the pool of customers being assisted by other team members. This includes <strong>adding a personal inbox</strong>, improving the layout for <strong>key identifiers to be displayed</strong>, and adding <strong>personalized notifications</strong>.</p>
-        </div>
-    </section>
-
-
-    <!---------- USER RESEARCH ---------->
-    <div class = "sendsmart-stageTitle stageTitle"><h2>User Research</h2></div>
-
-    <section class = "stageSection">
-        
-        
-
-        <div class = "stageContent">
-
-        <!-- User Surveys & Interviews-->
-
-            <div class = "sectionTitle"><h3>User Surveys & Interviews</h3></div>
-            <div class = "sectionDescription"><p><strong>Six dealership representatives were surveyed</strong> about their use of SendSmart. <strong>Follow-up interviews were conducted</strong> after narrowing down their <strong>pain points and blockers</strong>.</p></div>
            
-            <div class = "listDescription"><p class = "bold">Topics Explored:</p></div>
-            <ul class = "sectionList">
-                <li class = "list"><p>What <strong>type(s) of dealer representatives</strong> use SendSmart?</p></li>
-                <li class = "list"><p>How helpful is the <strong>message notification system</strong>?</p></li>
-                <li class = "list"><p>How easily do dealer representatives <strong>navigate messages</strong>?</p></li>
-            </ul>
+            </subsection>
 
-            <div class = "sectionDescription50"><p>It became apparent that some <strong>responses differed depending upon job title / position.</strong></p></div>
+            <!-- SendSmart Steps -->
+
+            <subsection id = "ss1">
+
+                    <div class = "sendsmart-overview-sectionTitle sectionTitle"><h3 class = "regular">How does SendSmart work?</h3></div>
+
+                    <div class = "sendsmartSteps-cardStack stacked-infoCards">
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 1.png"></img>
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 2.png"></img>
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 3.png"></img>
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Step 4.png"></img>     
+                    </div>
+
+            </subsection>
+                
+        </section>
+
+        <!---------- PROBLEM & SOLUTION ---------->
+
+        <section class = "sendsmart-problemSolution problemSolution" id = "S1">
+
+            <subsection class = "subsection-Smallscrollmargin" id = "ss2">
+
+                <div class = "problem">
+                    <h2>The Problem</h2>
+                    <p class = "problemDescription">Dealership representatives have reported <strong>SendSmart doesn't allow them to organize and filter their messages and notifications</strong>. This makes it <strong>difficult to detect and navigate their assigned customers</strong>, which could result in <strong>lost opportunities</strong>.</b>.</p>
+                </div>
+
+                <div class = "solution">
+                    <h2>Proposed Solution</h2>
+                    <p class = "solutionDescription"><strong>Increase dealership representatives’ sensitivity toward detecting their assigned customers</strong> by providing ways to discern them from the pool of customers being assisted by other team members. This includes <strong>adding a personal inbox</strong>, improving the layout for <strong>key identifiers to be displayed</strong>, and adding <strong>personalized notifications</strong>.</p>
+                </div>
+
+            </subsection>
+
+        </section>
+
+
+        <!---------- USER RESEARCH ---------->
+        <section class = "stageSection" id = "S2">
+
+            <div class = "sendsmart-stageTitle stageTitle"><h2>User Research</h2></div>
+        
+            <div class = "stageContent">
+
+                <!-- User Surveys & Interviews-->
+
+                <subsection class = "subsection-scrollmargin" id = "ss3">
+                    <div class = "first-sectionTitle"><h3>User Surveys & Interviews</h3></div>
+                    <div class = "sectionDescription"><p><strong>Six dealership representatives were surveyed</strong> about their use of SendSmart. <strong>Follow-up interviews were conducted</strong> after narrowing down their <strong>pain points and blockers</strong>.</p></div>
+           
+                    <div class = "listDescription"><p class = "bold">Topics Explored:</p></div>
+                        <ul class = "sectionList">
+                            <li class = "list"><p>What <strong>type(s) of dealer representatives</strong> use SendSmart?</p></li>
+                            <li class = "list"><p>How helpful is the <strong>message notification system</strong>?</p></li>
+                            <li class = "list"><p>How easily do dealer representatives <strong>navigate messages</strong>?</p></li>
+                        </ul>
+
+                    <div class = "sectionDescription50"><p>It became apparent that some <strong>responses differed depending upon job title / position.</strong></p></div>
             
-            <div class = "stacked-infoCards">
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Messages Per Day.png"></img>
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Organization_of_Messages.png"></img>
-                <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Message_Notification_System.png"></img>
-            </div>
+                    <div class = "stacked-infoCards">
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Messages Per Day.png"></img>
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Organization_of_Messages.png"></img>
+                        <img class = "infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Message_Notification_System.png"></img>
+                    </div>
 
-            <div class = "rectangleDivider"></div>
+                    <div class = "rectangleDivider"></div>
 
+                </subsection>
 
-        <!-- Affinity Diagram -->
+                <!-- Affinity Diagram -->
             
-        <div class = "sectionTitle"><h3>Affinity Diagram</h3></div>
-        <div class = "sectionDescription"><p>To analyze the data further, an affinity diagram was constructed to <strong>find patterns among responses</strong>.</p></div>
+                <subsection class = "subsection-scrollmargin" id = "ss4">
+                    <div class = "sectionTitle"><h3>Affinity Diagram</h3></div>
+                    <div class = "sectionDescription"><p>To analyze the data further, an affinity diagram was constructed to <strong>find patterns among responses</strong>.</p></div>
     
-        <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Affinity Diagram.png">
+                    <img class = "sectionIMG" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Affinity Diagram.png">
 
-        <div class = "listDescription"><p>Additional Key Findings:</p></div>
-        <ul class = "sectionList">
-            <li class = "list"><p>SendSmart is used for <strong>different reasons based on job title / position</strong></p></li>
-            <li class = "list"><p>Dealer representatives use SendSmart <strong>most days on both desktop and mobile devices</strong></p></li>
-            <li class = "list"><p><strong>Auditory & visual notifications are utilized</strong> by dealer reps on both desktop and mobile devices</p></li>
-            <li class = "list"><p><strong>Notification preferences vary</strong> by job title / position</p></li>
-        </ul>
+                    <div class = "listDescription"><p>Additional Key Findings:</p></div>
+                    <ul class = "sectionList">
+                        <li class = "list"><p>SendSmart is used for <strong>different reasons based on job title / position</strong></p></li>
+                        <li class = "list"><p>Dealer representatives use SendSmart <strong>most days on both desktop and mobile devices</strong></p></li>
+                        <li class = "list"><p><strong>Auditory & visual notifications are utilized</strong> by dealer reps on both desktop and mobile devices</p></li>
+                        <li class = "list"><p><strong>Notification preferences vary</strong> by job title / position</p></li>
+                    </ul>
 
-        <div class = "sectionDescription50"><p>An additional diagram showing the <strong>dealership process</strong> was made to provide <strong>context</strong>.</p></div>
+                    <div class = "sectionDescription50"><p>An additional diagram showing the <strong>dealership process</strong> was made to provide <strong>context</strong>.</p></div>
 
-        <div class = "stacked-infoCards">
-            <img class = "sendsmartProcess-infocard infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Personas and Process.png"></img>
-        </div>
+                    <div class = "stacked-infoCards">
+                        <img class = "sendsmartProcess-infocard infoCard" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Personas and Process.png"></img>
+                    </div>
         
         
-        <div class = "rectangleDivider"></div>
+                    <div class = "rectangleDivider"></div>
+                </subsection>
 
 
         <!-- Empathy Maps -->
@@ -233,14 +298,14 @@
             <div class = "imgTitle"><p class = "bold">Appraiser / Salesperson</p></div>
             <img class = "sectionIMGwTitle" src = "/UX_UI_Portfolio/Images/SendSmart/SendSmart - Persona - Appraiser.png" style = "filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))">
 
-        </div>
-    </section>
+            </div>
+        </section>
 
 
     <!----------- DEFINING THE PROBLEM ---------->
-    <div class = "sendsmart-stageTitle stageTitle"><h2>Defining the Problem</h2></div>
+    <section class = "stageSection" id = "S3">
 
-    <section class = "stageSection">
+        <div class = "sendsmart-stageTitle stageTitle"><h2>Defining the Problem</h2></div>
 
         <div class = "stageContent">
 
@@ -339,15 +404,14 @@
             <div class = "sectionDescription"><p>By framing the issues dealership representatives face in terms of SDT, it helped to develop a concise problem statement to be considered for the design phase:</p></div>
         
             <div class = "sectionDescription"><p><i>It has been observed SendSmart <strong>doesn't afford</strong> dealership representatives the <strong>ability to sort and filter their notifications and messages</strong> making it <strong>difficult to detect and navigate their customers</strong>, which leads to <strong>missed opportunities</strong>.</i></p></div>
- 
+        </div>
     </section>
 
 
-    <!---------- IDEATION ----------> 
-    <div class = "sendsmart-stageTitle stageTitle"><h2>Ideation</h2></div>
-  
-    <section class = "stageSection">
+    <!---------- IDEATION ---------->   
+    <section class = "stageSection" id = "S4">
         
+        <div class = "sendsmart-stageTitle stageTitle"><h2>Ideation</h2></div>
 
         <div class = "stageContent">
 
@@ -429,12 +493,10 @@
     </section>
 
 
-    <!---------- DESIGN & PROTOTYPE ---------->
-    
-    <div class = "sendsmart-stageTitle stageTitle"><h2>Design & Prototype</h2></div>
-    
-    <section class = "stageSection">
+    <!---------- DESIGN & PROTOTYPE ---------->    
+    <section class = "stageSection" id = "S5">
         
+        <div class = "sendsmart-stageTitle stageTitle"><h2>Design & Prototype</h2></div>
 
         <div class = "stageContent">
 
@@ -494,10 +556,9 @@
     </section>
 
     <!---------- TESTING & ITERATION ---------->
-
-    <div class = "sendsmart-stageTitle stageTitle"><h2>Testing & Iteration</h2></div>
-    <section class = "stageSection">
+    <section class = "stageSection" id = "S6">
         
+        <div class = "sendsmart-stageTitle stageTitle"><h2>Testing & Iteration</h2></div>
 
         <div class = "stageContent">
 
@@ -569,10 +630,10 @@
 
 
     <!---------- REFLECTION & NEXT STEPS ---------->     
-    <div class = "sendsmart-stageTitle stageTitle"><h2>Reflection & Next Steps</h2></div>
-    <section class = "stageSection reflection-stageSection">
+    <section class = "stageSection reflection-stageSection" id = "S7">
        
- 
+        <div class = "sendsmart-stageTitle stageTitle"><h2>Reflection & Next Steps</h2></div>
+
         <div class = "stageContent">
  
  
@@ -629,7 +690,7 @@
         </div>
 
         <div class = "copyright">
-            <p2>Copyright © 2021 - All Rights Reserved</p2>
+            <p2>Copyright © 2022 - All Rights Reserved</p2>
         </div>
         
     </footer>

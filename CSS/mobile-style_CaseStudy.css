@@ -30,12 +30,13 @@ p{
 
 /* ---------- Navigation Bar ---------- */
 
+@media screen and (max-width: 640px){
+    .menuItems{
+        margin-left: 0px;
+        margin-right: 10px;  
+    }
 
-.menuItems{
-    margin-left: 20px;
-    margin-right: 30px;  
 }
-
 
 /* Hamburger Menu navIcon */
 
@@ -257,6 +258,13 @@ p{
 
 /*---------- GENERAL CASE STUDY COMPONENTS ----------*/
 
+
+
+
+
+
+
+
 /* -- Overview Top -- */
 .overviewTop{
     padding-top: 150px;
@@ -280,8 +288,8 @@ p{
 /* ----- Project Overview ----- */
 
 .projecOverview{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
    
 }
 
@@ -372,8 +380,8 @@ p{
 
 @media screen and (max-width: 640px){
     .problemSolution{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -400,20 +408,27 @@ p{
 /* ---------- Content ---------- */
 
 /* -- Stage --*/
-.stageTitle{
+.stageSection{
     margin-top: 56px;
+}
+
+.stageTitle{
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
 @media screen and (max-width: 640px){
-    .stageSection{
-        padding-left: 20px;
-        padding-right: 20px;
+    .stageContent{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 /* -- Section -- */
+.first-sectionTitle{
+    margin-top: 94px;
+}
+
 .sectionTitle{
     margin-top: 38px;
 }

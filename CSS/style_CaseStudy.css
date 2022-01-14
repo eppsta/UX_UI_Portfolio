@@ -346,6 +346,18 @@ footer{
   }
 
 
+/* ---------- General Margins, Paddings, & Widths ---------- */
+
+.subsectionContent{
+    max-width: 1164px;
+    width: 100%;
+}
+
+section{
+    scroll-margin: 75px;
+}
+
+
 /* ---------- Project Overview ---------- */
 
 .projecOverview{
@@ -358,10 +370,7 @@ footer{
    
 }
 
-.overviewContent{
-    max-width: 1164px;
-    width: 100%;
-}
+
 
 /* -- Overiew Top -- */
 .overviewTop{
@@ -464,7 +473,6 @@ footer{
 /* -- Problem -- */
 .problem{
     width: 100%;
-    max-width: 1164px;
     padding-top: 75px;
 }
 
@@ -475,7 +483,6 @@ footer{
 /* -- Solution -- */
 .solution{
     width: 100%;
-    max-width: 1164px;
     margin-top: 50px;
 }
 
@@ -504,19 +511,35 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    padding-left: 50px;
+    padding-right: 50px;
+
+    scroll-margin: 75px;  
+}
+
+.scrollmargin{
     scroll-margin: 75px;
+
 }
 
 .stageContent{
-    max-width: 1164px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1164px;  
+    
 }
 
 /* -- Section -- */
 
-.subsection-scrollmargin{
-    scroll-margin: 75px; 
+.negative-scrollmargin{
+    scroll-margin: -25px; 
+}
+
+.small-scrollmargin{
+    scroll-margin: 50px;
+}
+
+.large-scrollmargin{
+    scroll-margin: 220px;
 }
 
 .first-sectionTitle{

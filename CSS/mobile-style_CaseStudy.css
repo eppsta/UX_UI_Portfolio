@@ -33,10 +33,29 @@ p{
 @media screen and (max-width: 640px){
     .menuItems{
         margin-left: 0px;
-        margin-right: 10px;  
+        margin-right: 5px;  
     }
 
+    .flexnav{
+        height: 50px;
+    }
+
+    .logoHome a {
+        padding: 11px 100px 11px 15px;
+    }
+
+    
+
+
+    
 }
+
+@media screen and (min-width: 641px){
+    .menuItems{
+        margin-right: 41px;  
+    }   
+}
+
 
 /* Hamburger Menu navIcon */
 
@@ -136,6 +155,7 @@ p{
 }
 
 
+
 .navMenu{
     display: flex;
     flex-direction: column;
@@ -143,7 +163,7 @@ p{
     top:0;
     right: 0;
     width: 250px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-right: 0px;
     margin-left: 0px;
     background-color: rgba(2, 14, 39, 0.0);
@@ -151,15 +171,22 @@ p{
     backdrop-filter: blur(15px);
     border-radius: 0px 0px 0px 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateY(0px);
+
 
    
-    transition: max-height .4s, background-color 1.2s;
+    transition: max-height .4s, background-color 1.2s, transform 4s;
     max-height: .25px;
     overflow: hidden;
 }
 
 
 
+@media screen and (min-width: 641px){   
+    .navMenu.responsive{
+        transform: translateY(10px);
+    }
+}
 
 .navMenu.responsive{
     display: flex;
@@ -168,6 +195,8 @@ p{
     background-color: rgba(2, 14, 39, 0.85);
    
 }
+
+
 
 
 
@@ -259,7 +288,79 @@ p{
 /*---------- GENERAL CASE STUDY COMPONENTS ----------*/
 
 
+/* ---------- Case Study Navigation ---------- */
 
+@media screen and (max-width: 640px){
+    .csNav{
+        margin-top: 50px;
+    }
+
+
+}
+
+
+
+ 
+.compass{
+    width: 48px;
+    height: 32px;
+    border-radius: 0px 0px 6px;
+}
+
+.compass img{
+    width: 24px;
+    height: 24px;
+}
+
+.compass i {
+    font-size: 22px;
+}
+
+.compass i.flip {
+    margin-right: 1px;
+}
+
+  
+.map{
+    margin-top: 30px;
+    border-radius: 0px 30px 30px 0px; 
+}
+  
+.sectionMap{
+    margin: 17px 0px 0px 10px;
+}
+ 
+.sectionMap li {
+    height: 17px;
+    width: 145px;
+
+    font-size: 14px;
+    
+}   
+  
+.subsectionMap{
+    margin: 21.5px 25px 17.5px 12px;
+}
+  
+.subsectionMap li {
+    height: 12px;
+    width: 140px;
+
+    font-size: 10px;
+    
+}
+
+
+/* ---------- General Margins, Paddings, & Widths ---------- */
+
+.subsectionContent{
+    max-width: 960px;
+    width: 100%;
+}
+
+section{
+    scroll-margin: 75px;
+}
 
 
 
@@ -418,7 +519,7 @@ p{
 }
 
 @media screen and (max-width: 640px){
-    .stageContent{
+    .stageSection{
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -549,6 +650,50 @@ li.list{
 
 /* ----- Global Components ----- */
 
+/* ----- Case Study Navigation ----- */
+
+.sendsmart-map.open{
+    background-color: rgba(39, 47, 55, 0.9);    
+}
+
+.sendsmart-compass{
+    background: rgba(39, 47, 55, 0.9);
+}
+
+.sendsmart-map{
+    background-color: rgba(39, 47, 55, 0);     
+}
+
+/* 1 item = 5 ; 2 items = 21 ; 3 items = 37 ; 4 items = 53 ; 5 items = 69 */
+/* Section Map */
+.sendsmart-sectionMap li:nth-child(2){
+    margin-top: 21px;
+}
+.sendsmart-sectionMap li:nth-child(3){
+    margin-top: 5px;
+}
+.sendsmart-sectionMap li:nth-child(4){
+    margin-top: 53px;
+}
+.sendsmart-sectionMap li:nth-child(5),
+.sendsmart-sectionMap li:nth-child(7),
+.sendsmart-sectionMap li:nth-child(8){
+    margin-top: 37px;
+}
+.sendsmart-sectionMap li:nth-child(6){
+    margin-top: 69px;
+}
+
+/* Subsection Map */
+.sendsmart-subsectionMap li:nth-child(3),
+.sendsmart-subsectionMap li:nth-child(4),
+.sendsmart-subsectionMap li:nth-child(8),
+.sendsmart-subsectionMap li:nth-child(11),
+.sendsmart-subsectionMap li:nth-child(16),
+.sendsmart-subsectionMap li:nth-child(19),
+.sendsmart-subsectionMap li:nth-child(22){
+    margin-top: 16px;
+}
 
 
 
@@ -617,7 +762,50 @@ li.list{
 
 /* --------------- HBO MAX --------------- */
 
+/* ----- Case Study Navigation ----- */
+
+.hbo-compass{
+    background-color: rgba(35, 32, 48, 0.9);     
+}
+
+.hbo-map.open{
+    background-color: rgba(35, 32, 48, 0.9);    
+}
+
+.hbo-map{
+    background-color: rgba(35, 32, 48, 0);     
+}
+
+/* 1 item = 5 ; 2 items = 21 ; 3 items = 37 ; 4 items = 53 ; 5 items = 69 ; 6 = 85 */
+/* Section Map */
+.hbo-sectionMap li:nth-child(2){
+    margin-top: 5px
+}
+.hbo-sectionMap li:nth-child(3){
+    margin-top: 5px
+}
+.hbo-sectionMap li:nth-child(4){
+    margin-top: 85px
+}
+.hbo-sectionMap li:nth-child(5),
+.hbo-sectionMap li:nth-child(6),
+.hbo-sectionMap li:nth-child(7){
+    margin-top: 53px
+}
+
+/* Subsection Map */
+.hbo-subsectionMap li:nth-child(2),
+.hbo-subsectionMap li:nth-child(3),
+.hbo-subsectionMap li:nth-child(9),
+.hbo-subsectionMap li:nth-child(13),
+.hbo-subsectionMap li:nth-child(17),
+.hbo-subsectionMap li:nth-child(21){
+    margin-top: 16px;
+}
+
 /* ----- Global Components ----- */
+
+
 
 
 

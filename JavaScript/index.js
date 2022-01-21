@@ -47,7 +47,25 @@ function reverse_arrow() {
         } 
 }
 
+/* Compass */
 
+function flip_arrow() {
+  var x = document.getElementById("arrow");
+      if (x.className === "fa fa-caret-right") {
+          x.className += " flip";
+      }   else {
+          x.className = "fa fa-caret-right";
+      } 
+} 
+
+function rotate_compass() {
+  var x = document.getElementById("compass");
+      if (x.className === "casestudy-compass") {
+          x.className += " rotate";
+      }   else {
+          x.className = "casestudy-compass";
+      } 
+} 
 
 /* Hamburger Menu navIcon ANIMATION */
 
@@ -64,16 +82,26 @@ function animate_navIcon() {
 
 /* Case Study Navigation */
 
-function open_map() {
+function open_map_sendsmart() {
     var x = document.getElementById("map");
-      if (x.className === "map") {
+      if (x.className === "map sendsmart-map") {
         x.className += " open";
       } else {
-        x.className = "map";
+        x.className = "map sendsmart-map";
       }   
-  }
+}
+
+function open_map_hbo() {
+  var x = document.getElementById("map");
+    if (x.className === "map hbo-map") {
+      x.className += " open";
+    } else {
+      x.className = "map hbo-map";
+    }   
+}
+
   
-  
+
   const sections = document.querySelectorAll("section");
   const subsections = document.querySelectorAll("subsection");
   const windowHeight = window.innerHeight;

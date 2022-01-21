@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Portfolio</title>
@@ -26,7 +26,7 @@
                 <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
                     <div class="navIcon_burger"></div>
                 </div>
-               
+              
                 
                 <div class = "navMenu" id = "navMenu">
                     <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
@@ -56,9 +56,14 @@
     <!---------- CASE STUDY NAVIGATION ---------->
 
     <div class = "csNav">
-        <div class = "compass" onclick = "open_map()"></div>
-      
-        <div class = "map" id = "map">
+        <div class = "compass sendsmart-compass" onclick = "open_map_sendsmart() ; rotate_compass() ; flip_arrow()">
+            <div class = "compass-items">
+                <img src = "/UX_UI_Portfolio/Icons/Compass.png" class = "casestudy-compass" id = "compass">
+                <i class="fa fa-caret-right" id = "arrow"></i>
+            </div> 
+        </div>
+     
+        <div class = "map sendsmart-map" id = "map">
           
             <ul class = "sectionMap sendsmart-sectionMap">
                 <li class = "selected">SendSmart</li>
@@ -266,7 +271,7 @@
                 
             </subsection>
 
-        <!-- Empathy Maps -->
+            <!-- Empathy Maps -->
             <subsection id = "ss5" class = "subsectionContent small-scrollmargin">
 
                 <div class = "sectionTitle"><h3>Empathy Maps</h3></div>
@@ -285,7 +290,7 @@
             
             </subsection>
 
-        <!-- User Personas -->
+            <!-- User Personas -->
             <subsection id = "ss6" class = "subsectionContent small-scrollmargin">
 
                 <div class = "sectionTitle"><h3>User Personas</h3></div>
@@ -403,7 +408,7 @@
 
 
             <!-- Problem Statement -->
-            <subsection id = "ss9" class = "subsectionContent large-scrollmargin">
+            <subsection id = "ss9" class = "subsectionContent small-scrollmargin">
 
                 <div class = "sectionTitle"><h3>Problem Statement</h3></div>
             
@@ -417,7 +422,7 @@
 
 
         <!---------- IDEATION ---------->   
-        <section class = "stageSection" id = "S4">
+        <section class = "stageSection ideation-stageSection" id = "S4">
         
             <div class = "sendsmart-stageTitle stageTitle"><h2>Ideation</h2></div>
 

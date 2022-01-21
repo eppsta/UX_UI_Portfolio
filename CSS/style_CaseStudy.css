@@ -273,83 +273,193 @@ footer{
 
 .csNav{
     position: fixed;
-    top: 10%;
-    z-index: 1; 
-  }
-  
-  .compass{
-    width: 30px;
-    height: 30px;
-    background: #DEC981;
-    border: 1px solid #aaa;
-    border-radius: 50%;
+    margin-top: 60px;
+    z-index: 1;    
+}
+
+ 
+.compass{
+    width: 60px;
+    height: 40px;
+    background: green;
+    border-radius: 0px 0px 8px;
     cursor: pointer;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  }
-  
-  .map.open{
-    max-height: 700px;
-    transition: max-height 1s;
-  }
-  
-  .map{
-    background: #ccc;
-    width: auto;
-    
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.compass-items{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px;
+}
+
+.compass img{
+    width: 32px;
+    height: 32px;
+    transition: transform .6s;
+    transition-delay: .5s;
+}
+
+.compass i {
+    color: #D0D0D0;
+    font-size: 28px;
+    transition: transform .6s, margin-right .6s;
+}
+
+.compass i.flip {
+    transform: rotate(-180deg);
+    margin-right: 2px;
+    transition: transform .5s, margin-right .5s;
+}
+
+.compass img.rotate{
+    transform: rotate(-90deg);
+    transition: transform .5s;
+    transition-delay: .5s;
+}
+
+.map.open{
+    background-color: green;
+    max-width: 600px;
     
+    width: auto;
+
+    transition: max-width 1s, background-color .5s;
+    
+   
+}
+
+
+  
+.map{
+    margin-top: 40px;
+    background-color: green;
+    border-radius: 0px 50px 50px 0px;
+
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: white;
+
+    width: auto;
+    max-width: .25px;
     height: auto;
     overflow: hidden;
-    max-height: 0px;
-    transition: max-height .5s;
-  }
-  
-  .sectionMap{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sectionMap li {
-    height: 20px;
-    padding: 5px 10px 35px 10px;
-    cursor: pointer;
-    transition: all .2s;
-  }
-  
-  .sectionMap li:hover {
-    color: gray;
-  }
-  
-  
-  
-  .subsectionMap{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .subsectionMap li {
-    height: 20px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: all .2s;
-  }
-  
-  .subsectionMap li:hover {
-    color: gray;
-  }
+    
+    display: flex;
+    justify-content: space-between;
+    
+    transition: max-width .5s, background-color 1.5s;
+}
  
-  .map li.selected{
+.sectionMap{
+    list-style: none;
+    margin: 22px 0px 0px 20px;
+    padding: 0;
+}
+ 
+.sectionMap li {
+    height: 22px;
+    padding: 0 0 10px;
+    cursor: pointer;
+    transition: color .2s, font-weight .2s;
+    width: 185px;
+  
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    text-align: right;
+    
+}
+  
+.sectionMap li:hover {
+    color: gray;
+}
+    
+  
+.subsectionMap{
+    list-style: none;
+    margin: 26.5px 35px 22.5px 15px;
+    padding: 0;
+}
+  
+.subsectionMap li {
+    height: 17px;
+    padding: 2px 0;
+    cursor: pointer;
+    transition: color .2s, font-weight .2s;
+    width: 192px;
+
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+
+.subsectionMap li:hover {
+    color: gray;
+}
+ 
+.sectionMap li.selected{
     color: white;
-  }
+    font-weight: 700;
+}
+
+.subsectionMap li.selected{
+    color: white;
+    font-weight: 900;
+}
+
+@media screen and (max-height: 800px) {
+    
+    
+    .map.open{
+        border-radius: 0px 30px 30px 0px;   
+    }
+      
+    .map{
+        margin-top: 40px;
+    }
+      
+    .sectionMap{
+        margin: 17px 0px 0px 10px;
+    }
+     
+    .sectionMap li {
+        height: 17px;
+        width: 145px;
+    
+        font-size: 14px;
+        
+    }   
+      
+    .subsectionMap{
+        margin: 21.5px 25px 17.5px 12px;
+    }
+      
+    .subsectionMap li {
+        height: 12px;
+        width: 140px;
+    
+        font-size: 10px;
+        
+    }
+}
+
 
 
 /* ---------- General Margins, Paddings, & Widths ---------- */
 
 .subsectionContent{
-    max-width: 1164px;
+    max-width: 960px;
     width: 100%;
 }
 
@@ -516,6 +626,10 @@ section{
     padding-right: 50px;
 
     scroll-margin: 75px;  
+}
+
+.ideation-stageSection{
+    margin-top: 200px;
 }
 
 .scrollmargin{
@@ -709,6 +823,87 @@ li.list{
 
 /* --------------- SENDSMART --------------- */
 
+/* ----- Case Study Navigation ----- */
+
+.sendsmart-map.open{
+    background-color: rgba(39, 47, 55, 0.9);    
+}
+
+.sendsmart-compass{
+    background: rgba(39, 47, 55, 0.9);
+}
+
+.sendsmart-map{
+    background-color: rgba(39, 47, 55, 0);     
+}
+
+/* 1 item = 5 ; 2 items = 26 ; 3 items = 47 ; 4 items = 68 ; 5 items = 89 */
+/* Section Map */
+.sendsmart-sectionMap li:nth-child(2){
+    margin-top: 26px;
+}
+.sendsmart-sectionMap li:nth-child(3){
+    margin-top: 5px;
+}
+.sendsmart-sectionMap li:nth-child(4){
+    margin-top: 68px;
+}
+.sendsmart-sectionMap li:nth-child(5),
+.sendsmart-sectionMap li:nth-child(7),
+.sendsmart-sectionMap li:nth-child(8){
+    margin-top: 47px;
+}
+.sendsmart-sectionMap li:nth-child(6){
+    margin-top: 89px;
+}
+
+/* Subsection Map */
+.sendsmart-subsectionMap li:nth-child(3),
+.sendsmart-subsectionMap li:nth-child(4),
+.sendsmart-subsectionMap li:nth-child(8),
+.sendsmart-subsectionMap li:nth-child(11),
+.sendsmart-subsectionMap li:nth-child(16),
+.sendsmart-subsectionMap li:nth-child(19),
+.sendsmart-subsectionMap li:nth-child(22){
+    margin-top: 16px;
+}
+
+@media screen and (max-height: 800px) {
+/* Section Map */
+.sendsmart-sectionMap li:nth-child(2){
+    margin-top: 21px;
+}
+.sendsmart-sectionMap li:nth-child(3){
+    margin-top: 5px;
+}
+.sendsmart-sectionMap li:nth-child(4){
+    margin-top: 53px;
+}
+.sendsmart-sectionMap li:nth-child(5),
+.sendsmart-sectionMap li:nth-child(7),
+.sendsmart-sectionMap li:nth-child(8){
+    margin-top: 37px;
+}
+.sendsmart-sectionMap li:nth-child(6){
+    margin-top: 69px;
+}
+
+/* Subsection Map */
+.sendsmart-subsectionMap li:nth-child(3),
+.sendsmart-subsectionMap li:nth-child(4),
+.sendsmart-subsectionMap li:nth-child(8),
+.sendsmart-subsectionMap li:nth-child(11),
+.sendsmart-subsectionMap li:nth-child(16),
+.sendsmart-subsectionMap li:nth-child(19),
+.sendsmart-subsectionMap li:nth-child(22){
+    margin-top: 16px;
+}
+
+}
+    
+
+
+
 /* ----- Global Components ----- */
 
 .sendsmart-projectOverview{
@@ -814,6 +1009,45 @@ li.list{
 
 
 /* --------------- HBO MAX --------------- */
+
+.hbo-compass{
+    background-color: rgba(35, 32, 48, 0.9);     
+}
+
+.hbo-map.open{
+    background-color: rgba(35, 32, 48, 0.9);    
+}
+
+.hbo-map{
+    background-color: rgba(35, 32, 48, 0);     
+}
+
+/* 1 item = 5 ; 2 items = 26 ; 3 items = 47 ; 4 items = 68 ; 5 items = 89 */
+/* Section Map */
+.hbo-sectionMap li:nth-child(2){
+    margin-top: 5px
+}
+.hbo-sectionMap li:nth-child(3){
+    margin-top: 5px
+}
+.hbo-sectionMap li:nth-child(4){
+    margin-top: 110px
+}
+.hbo-sectionMap li:nth-child(5),
+.hbo-sectionMap li:nth-child(6),
+.hbo-sectionMap li:nth-child(7){
+    margin-top: 68px
+}
+
+/* Subsection Map */
+.hbo-subsectionMap li:nth-child(2),
+.hbo-subsectionMap li:nth-child(3),
+.hbo-subsectionMap li:nth-child(9),
+.hbo-subsectionMap li:nth-child(13),
+.hbo-subsectionMap li:nth-child(17),
+.hbo-subsectionMap li:nth-child(21){
+    margin-top: 16px;
+}
 
 /* ----- Global Components ----- */
 

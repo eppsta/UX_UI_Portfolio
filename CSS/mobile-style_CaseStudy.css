@@ -292,7 +292,7 @@ p{
 
 @media screen and (max-width: 640px){
     .csNav{
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
 
@@ -302,9 +302,9 @@ p{
 
  
 .compass{
-    width: 48px;
+    width: 40px;
     height: 32px;
-    border-radius: 0px 0px 6px;
+    border-radius: 0px 8px 8px 0px;
 }
 
 .compass img{
@@ -313,11 +313,7 @@ p{
 }
 
 .compass i {
-    font-size: 22px;
-}
-
-.compass i.flip {
-    margin-right: 1px;
+    font-size: 12px;
 }
 
   
@@ -353,13 +349,48 @@ p{
 
 /* ---------- General Margins, Paddings, & Widths ---------- */
 
-.subsectionContent{
-    max-width: 960px;
-    width: 100%;
-}
 
 section{
-    scroll-margin: 75px;
+    scroll-margin: 70px;
+}
+
+.negative-scrollmargin{
+    scroll-margin: 5px; 
+}
+
+.tiny-scrollmargin{
+    scroll-margin: 30px;
+}
+
+.small-scrollmargin{
+    scroll-margin: 60px;
+}
+
+.large-scrollmargin{
+    scroll-margin: 220px;
+}
+
+@media screen and (max-width: 640px){
+    section{
+        scroll-margin: 70px;
+    }
+    
+    .negative-scrollmargin{
+        scroll-margin: -5px; 
+    }
+    
+    .tiny-scrollmargin{
+        scroll-margin: 28px;
+    }
+    
+    .small-scrollmargin{
+        scroll-margin: 50px;
+    }
+    
+    .large-scrollmargin{
+        scroll-margin: 220px;
+    }
+
 }
 
 
@@ -483,6 +514,8 @@ section{
     .problemSolution{
         padding-left: 15px;
         padding-right: 15px;
+
+        scroll-margin: 28px;
     }
 }
 
@@ -513,6 +546,10 @@ section{
     margin-top: 56px;
 }
 
+.ideation-stageSection{
+    margin-top: 150px;
+}
+
 .stageTitle{
     padding-top: 8px;
     padding-bottom: 8px;
@@ -526,6 +563,8 @@ section{
 }
 
 /* -- Section -- */
+
+
 .first-sectionTitle{
     margin-top: 94px;
 }

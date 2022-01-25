@@ -273,16 +273,16 @@ footer{
 
 .csNav{
     position: fixed;
-    margin-top: 60px;
+    margin-top: 70px;
     z-index: 1;    
 }
 
  
 .compass{
-    width: 60px;
+    width: 50px;
     height: 40px;
     background: green;
-    border-radius: 0px 0px 8px;
+    border-radius: 0px 10px 10px 0px;
     cursor: pointer;
 
     display: flex;
@@ -311,14 +311,13 @@ footer{
 
 .compass i {
     color: #D0D0D0;
-    font-size: 28px;
-    transition: transform .6s, margin-right .6s;
+    font-size: 16px;
+    transition: transform .6s;
 }
 
 .compass i.flip {
-    transform: rotate(-180deg);
-    margin-right: 2px;
-    transition: transform .5s, margin-right .5s;
+    transform: translateX(-1.5px) rotate(-180deg);
+    transition: transform .5s;
 }
 
 .compass img.rotate{
@@ -464,9 +463,23 @@ footer{
 }
 
 section{
-    scroll-margin: 75px;
+    scroll-margin: 70px;
 }
 
+.negative-scrollmargin{
+    scroll-margin: -15px; 
+}
+.tiny-scrollmargin{
+    scroll-margin: 30px;
+}
+
+.small-scrollmargin{
+    scroll-margin: 60px;
+}
+
+.large-scrollmargin{
+    scroll-margin: 220px;
+}
 
 /* ---------- Project Overview ---------- */
 
@@ -566,9 +579,6 @@ section{
 
 
 /* ---------- Problem & Solution ---------- */
-.subsection-Smallscrollmargin{
-    scroll-margin: 25px;
-}
 
 .problemSolution{
     background-color: #C4C4C4;
@@ -578,6 +588,8 @@ section{
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
+    
+    scroll-margin: 30px;
 }
 
 /* -- Problem -- */
@@ -623,38 +635,18 @@ section{
     align-items: center;
     
     padding-left: 50px;
-    padding-right: 50px;
-
-    scroll-margin: 75px;  
+    padding-right: 50px; 
 }
 
 .ideation-stageSection{
     margin-top: 200px;
 }
 
-.scrollmargin{
-    scroll-margin: 75px;
-
-}
-
 .stageContent{
-    max-width: 1164px;  
-    
+    max-width: 1164px;   
 }
 
 /* -- Section -- */
-
-.negative-scrollmargin{
-    scroll-margin: -25px; 
-}
-
-.small-scrollmargin{
-    scroll-margin: 50px;
-}
-
-.large-scrollmargin{
-    scroll-margin: 220px;
-}
 
 .first-sectionTitle{
     margin-top: 125px;

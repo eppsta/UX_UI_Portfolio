@@ -274,7 +274,9 @@ footer{
 .csNav{
     position: fixed;
     margin-top: 70px;
-    z-index: 1;    
+    z-index: 1;
+    
+    
 }
 
  
@@ -350,8 +352,7 @@ footer{
 
     width: auto;
     max-width: .25px;
-    height: auto;
-    overflow: hidden;
+    overflow: auto;
     
     display: flex;
     justify-content: space-between;
@@ -426,8 +427,11 @@ footer{
       
     .map{
         margin-top: 40px;
+        max-height: 75vh;
+        overflow: auto;
+        
     }
-      
+    
     .sectionMap{
         margin: 17px 0px 0px 10px;
     }
@@ -818,15 +822,15 @@ li.list{
 /* ----- Case Study Navigation ----- */
 
 .sendsmart-map.open{
-    background-color: rgba(39, 47, 55, 0.9);    
+    background-color: rgba(29, 36, 43, 0.9);    
 }
 
 .sendsmart-compass{
-    background: rgba(39, 47, 55, 0.9);
+    background: rgba(29, 36, 43, 0.9);
 }
 
 .sendsmart-map{
-    background-color: rgba(39, 47, 55, 0);     
+    background-color: rgba(29, 36, 43, 0);     
 }
 
 /* 1 item = 5 ; 2 items = 26 ; 3 items = 47 ; 4 items = 68 ; 5 items = 89 */
@@ -861,38 +865,39 @@ li.list{
 }
 
 @media screen and (max-height: 800px) {
-/* Section Map */
-.sendsmart-sectionMap li:nth-child(2){
-    margin-top: 21px;
-}
-.sendsmart-sectionMap li:nth-child(3){
-    margin-top: 5px;
-}
-.sendsmart-sectionMap li:nth-child(4){
-    margin-top: 53px;
-}
-.sendsmart-sectionMap li:nth-child(5),
-.sendsmart-sectionMap li:nth-child(7),
-.sendsmart-sectionMap li:nth-child(8){
-    margin-top: 37px;
-}
-.sendsmart-sectionMap li:nth-child(6){
-    margin-top: 69px;
+
+    /* Section Map */
+    .sendsmart-sectionMap li:nth-child(2){
+        margin-top: 16px;
+    }
+    .sendsmart-sectionMap li:nth-child(3){
+        margin-top: 0px;
+    }
+    .sendsmart-sectionMap li:nth-child(4){
+        margin-top: 48px;
+    }
+    .sendsmart-sectionMap li:nth-child(5),
+    .sendsmart-sectionMap li:nth-child(7),
+    .sendsmart-sectionMap li:nth-child(8){
+        margin-top: 32px;
+    }
+    .sendsmart-sectionMap li:nth-child(6){
+        margin-top: 64px;
+    }
+
+    /* Subsection Map */
+    .sendsmart-subsectionMap li:nth-child(3),
+    .sendsmart-subsectionMap li:nth-child(4),
+    .sendsmart-subsectionMap li:nth-child(8),
+    .sendsmart-subsectionMap li:nth-child(11),
+    .sendsmart-subsectionMap li:nth-child(16),
+    .sendsmart-subsectionMap li:nth-child(19),
+    .sendsmart-subsectionMap li:nth-child(22){
+        margin-top: 11px;
+    }
+
 }
 
-/* Subsection Map */
-.sendsmart-subsectionMap li:nth-child(3),
-.sendsmart-subsectionMap li:nth-child(4),
-.sendsmart-subsectionMap li:nth-child(8),
-.sendsmart-subsectionMap li:nth-child(11),
-.sendsmart-subsectionMap li:nth-child(16),
-.sendsmart-subsectionMap li:nth-child(19),
-.sendsmart-subsectionMap li:nth-child(22){
-    margin-top: 16px;
-}
-
-}
-    
 
 
 
@@ -1003,15 +1008,15 @@ li.list{
 /* --------------- HBO MAX --------------- */
 
 .hbo-compass{
-    background-color: rgba(35, 32, 48, 0.9);     
+    background-color: rgba(27, 25, 38, 0.9);     
 }
 
 .hbo-map.open{
-    background-color: rgba(35, 32, 48, 0.9);    
+    background-color: rgba(27, 25, 38, 0.9);    
 }
 
 .hbo-map{
-    background-color: rgba(35, 32, 48, 0);     
+    background-color: rgba(27, 25, 38, 0);     
 }
 
 /* 1 item = 5 ; 2 items = 26 ; 3 items = 47 ; 4 items = 68 ; 5 items = 89 */
@@ -1039,6 +1044,33 @@ li.list{
 .hbo-subsectionMap li:nth-child(17),
 .hbo-subsectionMap li:nth-child(21){
     margin-top: 16px;
+}
+
+@media screen and (max-height: 800px){
+    /* Section Map */
+    .hbo-sectionMap li:nth-child(2),
+    .hbo-sectionMap li:nth-child(3){
+        margin-top: 0px
+    }
+    
+    .hbo-sectionMap li:nth-child(4){
+        margin-top: 80px
+    }
+    .hbo-sectionMap li:nth-child(5),
+    .hbo-sectionMap li:nth-child(6),
+    .hbo-sectionMap li:nth-child(7){
+        margin-top: 48px
+    }
+
+    /* Subsection Map */
+    .hbo-subsectionMap li:nth-child(2),
+    .hbo-subsectionMap li:nth-child(3),
+    .hbo-subsectionMap li:nth-child(9),
+    .hbo-subsectionMap li:nth-child(13),
+    .hbo-subsectionMap li:nth-child(17),
+    .hbo-subsectionMap li:nth-child(21){
+        margin-top: 11px;
+    }
 }
 
 /* ----- Global Components ----- */

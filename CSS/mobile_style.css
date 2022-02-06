@@ -319,6 +319,7 @@ p2{
 .projectButton{
     padding: 12px 29px;
     font-size: 14px;
+    border-radius: 20px;;
 }
 
 .projects{
@@ -436,3 +437,71 @@ p2{
 .copyright{
     margin-top: 49px;
 }
+
+
+
+
+
+
+
+
+
+
+/* -------------------- ABOUT --------------------*/
+
+@media screen and (max-width: 640px){
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.aboutTitle{
+    margin-top: 221px;
+    color: white;
+}
+
+.aboutContent{
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+}
+
+.about2{
+    margin-top: 40px;
+
+    flex-direction: column;
+}
+
+.about2A{
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 100px;
+}
+
+.about2Aii{
+    margin-top: 40px;
+}
+
+
+.about2B{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img{
+    max-width: 538px;
+    width: 100%;
+}
+
+
+
+
+
+
+

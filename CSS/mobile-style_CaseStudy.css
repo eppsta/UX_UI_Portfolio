@@ -320,6 +320,10 @@ p{
 .map{
     margin-top: 30px;
     border-radius: 0px 30px 30px 0px; 
+
+    max-height: 78vh;
+    overflow: auto;
+    
 }
   
 .sectionMap{
@@ -691,36 +695,25 @@ li.list{
 
 /* ----- Case Study Navigation ----- */
 
-.sendsmart-map.open{
-    background-color: rgba(39, 47, 55, 0.9);    
-}
 
-.sendsmart-compass{
-    background: rgba(39, 47, 55, 0.9);
-}
-
-.sendsmart-map{
-    background-color: rgba(39, 47, 55, 0);     
-}
-
-/* 1 item = 5 ; 2 items = 21 ; 3 items = 37 ; 4 items = 53 ; 5 items = 69 */
+/* 1 item = 0 ; 2 items = 26 ; 3 items = 32 ; 4 items = 48 ; 5 items = 64 */
 /* Section Map */
 .sendsmart-sectionMap li:nth-child(2){
-    margin-top: 21px;
+    margin-top: 16px;
 }
 .sendsmart-sectionMap li:nth-child(3){
-    margin-top: 5px;
+    margin-top: 0px;
 }
 .sendsmart-sectionMap li:nth-child(4){
-    margin-top: 53px;
+    margin-top: 48px;
 }
 .sendsmart-sectionMap li:nth-child(5),
 .sendsmart-sectionMap li:nth-child(7),
 .sendsmart-sectionMap li:nth-child(8){
-    margin-top: 37px;
+    margin-top: 32px;
 }
 .sendsmart-sectionMap li:nth-child(6){
-    margin-top: 69px;
+    margin-top: 64px;
 }
 
 /* Subsection Map */
@@ -731,7 +724,7 @@ li.list{
 .sendsmart-subsectionMap li:nth-child(16),
 .sendsmart-subsectionMap li:nth-child(19),
 .sendsmart-subsectionMap li:nth-child(22){
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 
@@ -803,33 +796,20 @@ li.list{
 
 /* ----- Case Study Navigation ----- */
 
-.hbo-compass{
-    background-color: rgba(35, 32, 48, 0.9);     
-}
-
-.hbo-map.open{
-    background-color: rgba(35, 32, 48, 0.9);    
-}
-
-.hbo-map{
-    background-color: rgba(35, 32, 48, 0);     
-}
-
-/* 1 item = 5 ; 2 items = 21 ; 3 items = 37 ; 4 items = 53 ; 5 items = 69 ; 6 = 85 */
+/* 1 item = 0 ; 2 items = 26 ; 3 items = 32 ; 4 items = 48 ; 5 items = 64 ; 6 items = 80 */
 /* Section Map */
-.hbo-sectionMap li:nth-child(2){
-    margin-top: 5px
-}
+.hbo-sectionMap li:nth-child(2),
 .hbo-sectionMap li:nth-child(3){
-    margin-top: 5px
+    margin-top: 0px
 }
+
 .hbo-sectionMap li:nth-child(4){
-    margin-top: 85px
+    margin-top: 80px
 }
 .hbo-sectionMap li:nth-child(5),
 .hbo-sectionMap li:nth-child(6),
 .hbo-sectionMap li:nth-child(7){
-    margin-top: 53px
+    margin-top: 48px
 }
 
 /* Subsection Map */
@@ -839,7 +819,7 @@ li.list{
 .hbo-subsectionMap li:nth-child(13),
 .hbo-subsectionMap li:nth-child(17),
 .hbo-subsectionMap li:nth-child(21){
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 /* ----- Global Components ----- */

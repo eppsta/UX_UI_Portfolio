@@ -218,7 +218,7 @@ h1{
 
 .content{
     margin-top: 221px;
-    max-width: 1164px;
+    max-width: 960px;
     text-align: center;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -258,6 +258,11 @@ h1{
 /* ---------- Skills Section ---------- */
 
 .mySkills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: #344465;
     color: white;
     padding-left: 50px;
@@ -270,27 +275,36 @@ h1{
 }
 
 .flexContainer1{
+    max-width: 960px;
+    width: 100%;
     margin-top: 70px;
+
     display: flex;
     text-align: center;
-    justify-content: center;
-    
+    justify-content: space-between;  
 }
 
+
 .flexContainer2{
+    max-width: 960px;
+    width: 100%;
     margin-top: 82px;
+
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 160px;
 }
 
-.flexChild + .flexChild{
-    margin-left: 138px;
-}
+
 
 .flexChild{
-    max-width: 480px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.flexChild:nth-of-type(even){
+    margin-left: 60px;
 }
 
 .skillDescription{
@@ -306,7 +320,7 @@ h1{
 .projectButton{
     background-image: linear-gradient(180deg, #1A3F8E 0%, #0B255B 100%);
     border: 1px solid #000000;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     color: white;
     padding: 16px 40px;
@@ -356,7 +370,7 @@ h1{
     background-color: white;
     height: 454px;
     width: 100%;
-    max-width: 1164px;
+    max-width: 960px;
     margin-top: 100px;
     border-radius: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -498,7 +512,7 @@ footer{
 
 .aboutContent{
     width: 100%;
-    max-width: 1164px;
+    max-width: 960px;
 
     color: white;
 

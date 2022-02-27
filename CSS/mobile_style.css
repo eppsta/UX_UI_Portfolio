@@ -45,7 +45,9 @@ p2{
         padding: 11px 100px 11px 15px;
     }
 
-    
+    .logoHome a.selection{
+        padding: 11px 100px 11px 13px;
+    }
 }
 
 @media screen and (min-width: 641px){
@@ -121,11 +123,6 @@ p2{
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-
-.navItem {
-    padding: 17.5px 0px;
-}
-
 .navItem:first-child {
     margin-top: 40px;
     padding-bottom: 0px;
@@ -136,29 +133,44 @@ p2{
     margin-bottom: 40px;
 }
 
+.navItem.selection a{
+    font-weight: 800;
+    padding: 17.5px 38px;
+    padding-right: 100%;
+}
+
 .navItem a{
     padding: 17.5px 38px;
     padding-right: 100%;
-   
-}
-
-.navItem i{
-    margin-left: 82px;
-    font-size: 24px;
-    transform: translateY(-.5px);
-    transition: transform .6s;
     
-   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
-.navItem i.reverse{
-    transform: rotateX(180deg);
+.navItem.proj i{
+    position: absolute;
+    left: 0;
+    margin-left: 15px;    
+    transition: transform .6s; 
+    transform: translatey(3px);
+}
+
+.navItem.proj i.reverse{
+    transform: translateY(3px) rotateX(180deg);
     transition: transform .4s;
 }
 
+.navItem.proj a:hover {
+    color: gray;
+}
 
-.navItem-projects{
-    display: flex;
+.navItem.resume i {
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+
+    transform: translateY(7px);
 }
 
 
@@ -185,8 +197,6 @@ p2{
 }
 
 
-
-
 .navMenu.responsive{
     display: flex;
     transition: max-height 1.2s, background-color .4s;
@@ -194,8 +204,6 @@ p2{
     background-color: rgba(2, 14, 39, 0.85);
    
 }
-
-
 
 .dropdown-content {
     display: flex;
@@ -236,11 +244,6 @@ p2{
 
 .dropdown-content a:last-child{   
     margin-bottom: 17px;
-}
-  
-.dropdown-content a:hover {
-    background-color: rgba(2, 14, 39, 0.6);
-    border-radius: 0px 0px 10px 10px;
 }
 
 .aHover{
@@ -457,34 +460,42 @@ p2{
         padding-left: 15px;
         padding-right: 15px;
     }
+    
+    .about1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img{
+        width: 252px;
+    }
+
+    .about1B{
+        margin-left: 0;
+        margin-top: 38px;
+    }
+
+
 }
 
 
 .aboutTitle{
-    margin-top: 221px;
-    color: white;
+    margin-top: 165px;
 }
 
 .aboutContent{
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 75px;
+    margin-bottom: 150px;
 
 }
 
 .about2{
-    margin-top: 40px;
-
-    flex-direction: column;
+    margin-top: 38px;
 }
 
-.about2A{
-    width: auto;
-    margin-right: 0px;
-    margin-bottom: 100px;
-}
 
 .about2Aii{
-    margin-top: 40px;
+    margin-top: 38px;
 }
 
 
@@ -495,8 +506,7 @@ p2{
 }
 
 .about-img{
-    max-width: 538px;
-    width: 100%;
+    width: 189px;
 }
 
 

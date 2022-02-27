@@ -121,7 +121,7 @@ b{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 16px 20px;
 }
 
@@ -140,17 +140,27 @@ b{
 }
 
 .navMenu{
-    display: flex;  
+    display: flex;
+}
+
+.navMenu a{
+    color: white;
+    transition: color .2s;
+}
+
+
+
+.navItem.proj a{
+    font-weight: 800;
+    padding: 17.5px 23px;
 }
 
 .navItem a{
-    color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 17.5px 25px;
-
 }
 
 .navItem i{
@@ -159,6 +169,19 @@ b{
     opacity: .5;
     transition: transform .85s;
     transition-delay: .4s;
+}
+
+.navItem.resume i{
+    margin-right:-10px;
+    margin-left: 1px;
+    font-size: 12px;
+    opacity: .5;
+    transform: translateY(-2px);
+}
+
+.navItem.resume a:hover,
+.navItem.about a:hover {
+    color: gray;
 }
 
 
@@ -185,11 +208,18 @@ b{
    
 }
 
+
 .dropdown-content a {   
-    padding: 12px 30px;
+    padding: 12px 30px !important;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300 !important;
+
 }
+
+a.selection{
+    font-weight: 800 !important;
+}
+
 
 .dropdown-content a:first-child{   
     margin-top: 17px;
@@ -200,8 +230,7 @@ b{
 }
   
 .dropdown-content a:hover {
-    background-color: rgba(2, 14, 39, 0.6);
-    border-radius: 0px 0px 10px 10px;
+    color: gray;
 }
 
 @media screen and (min-width: 940px) {
@@ -318,7 +347,7 @@ footer{
 }
 
 .compass i.flip {
-    transform: translateX(-1.5px) rotate(-180deg);
+    transform: translateX(.5px) rotate(-180deg);
     transition: transform .5s;
 }
 
@@ -383,7 +412,7 @@ footer{
 .sectionMap li:hover {
     color: gray;
 }
-    
+   
   
 .subsectionMap{
     list-style: none;

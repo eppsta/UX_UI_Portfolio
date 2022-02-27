@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="/UX_UI_Portfolio/CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 939px)" href= "/UX_UI_Portfolio/CSS/mobile_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
@@ -20,29 +20,29 @@
         <nav class = "flexnav" id = "nav">
             <div class = "menuItems">
                 <div class = "logoHome">
-                    <a href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
+                    <a class = "selection" href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
                 </div>
 
                 <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
                     <div class="navIcon_burger"></div>
                 </div>
                
-               
+                
                 <div class = "navMenu" id = "navMenu">
                     <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
-                        <a class = "navItem-projects">Projects <i class="fa fa-caret-down" id = "caret"></i></a>
+                        <a class = "navItem-projects">Projects <i class="fa-solid fa-caret-down" id = "caret"></i></a>
                         <div class="dropdown-content" id = "dropdown-content">
                             <a href="/UX_UI_Portfolio/sendsmartCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">SendSmart</a>
                             <a href="/UX_UI_Portfolio/hboCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">HBO Max</a>
                         </div>
                     </div>
 
-                    <div class = "navItem"><a href = "/UX_UI_Portfolio/PDFs/Resume.pdf" target = "_blank">Resume</a></div> 
-                    <div class = "navItem"><a href = "/UX_UI_Portfolio/about.html">About</a></div>
+                    <div class = "navItem resume"><a href = "/UX_UI_Portfolio/PDFs/Resume.pdf" target = "_blank">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div> 
+                    <div class = "navItem about"><a href = "/UX_UI_Portfolio/about.html">About</a></div>
                     
                 </div>
                
-                
+               
                 
 
             </div>

@@ -40,10 +40,10 @@ function close_dropdownContent() {
 
 function reverse_arrow() {
     var x = document.getElementById("caret");
-        if (x.className === "fa fa-caret-down") {
+        if (x.className === "fa-solid fa-caret-down") {
             x.className += " reverse";
         }   else {
-            x.className = "fa fa-caret-down";
+            x.className = "fa-solid fa-caret-down";
         } 
 }
 

@@ -100,15 +100,22 @@ h1{
 
 /* Logo */
 
+a.selection {
+    font-weight: 800 !important;
+}
+
 .logoHome a{
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 16px 100px 16px 20px;
 }
 
+.logoHome a.selection{
+    padding: 16px 100px 16px 18px;
+}
 
 /* Nav Icon */
 
@@ -127,23 +134,46 @@ h1{
     display: flex;
 }
 
-.navItem a{
+.navMenu a{
     color: white;
+    transition: color .2s;
+}
+
+.navItem.selection a{
+    font-weight: 800;
+    padding: 17.5px 24px;
+}
+
+.navItem a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 17.5px 25px;
-
 }
 
-.navItem i{
+.navItem.proj i{
     margin-right:-10px;
     font-size: 16px;
     opacity: .5;
     transition: transform .85s;
     transition-delay: .4s;
 }
+
+.navItem.resume i{
+    margin-right:-10px;
+    margin-left: 1px;
+    font-size: 12px;
+    opacity: .5;
+    transform: translateY(-2px);
+}
+
+.navItem.resume a:hover,
+.navItem.about a:hover {
+    color: gray;
+}
+
+
 
 
 
@@ -172,7 +202,8 @@ h1{
 .dropdown-content a {   
     padding: 12px 30px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
+    transition: color .2s;
 }
 
 .dropdown-content a:first-child{   
@@ -182,10 +213,9 @@ h1{
 .dropdown-content a:last-child{   
     margin-bottom: 17px;
 }
-  
+
 .dropdown-content a:hover {
-    background-color: rgba(2, 14, 39, 0.6);
-    border-radius: 0px 0px 10px 10px;
+    color: gray;
 }
 
 @media screen and (min-width: 940px) {
@@ -521,6 +551,19 @@ footer{
 
 }
 
+.about1{
+    display: flex;
+}
+
+.about-img{
+    width: 245px;
+    
+}
+
+.about1B{
+    margin-left: 50px;
+}
+
 .about2{
     margin-top: 50px;
 
@@ -529,24 +572,12 @@ footer{
 
 }
 
-.about2A{
-    width: 65%;
-    margin-right: 10%;
-}
-
 .about2Aii{
     margin-top: 50px;
 }
 
 
-.about2B{
-    width: 45%;
-}
 
-.about-img{
-    max-width: 538px;
-    width: 100%;
-}
 
 
 

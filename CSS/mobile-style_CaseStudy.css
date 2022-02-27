@@ -114,11 +114,6 @@ p{
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-
-.navItem {
-    padding: 17.5px 0px;
-}
-
 .navItem:first-child {
     margin-top: 40px;
     padding-bottom: 0px;
@@ -129,29 +124,44 @@ p{
     margin-bottom: 40px;
 }
 
-.navItem a{
+.navItem.selection a{
+    font-weight: 800;
     padding: 17.5px 38px;
     padding-right: 100%;
-   
 }
 
-.navItem i{
-    margin-left: 82px;
-    font-size: 24px;
-    transform: translateY(-.5px);
-    transition: transform .6s;
+.navItem a{
+    padding: 17.5px 38px !important;
+    padding-right: 100%;
     
-   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
-.navItem i.reverse{
-    transform: rotateX(180deg);
+.navItem.proj i{
+    position: absolute;
+    left: 0;
+    margin-left: 15px;    
+    transition: transform .6s; 
+    transform: translatey(3px);
+}
+
+.navItem.proj i.reverse{
+    transform: translateY(3px) rotateX(180deg);
     transition: transform .4s;
 }
 
+.navItem.proj a:hover {
+    color: gray;
+}
 
-.navItem-projects{
-    display: flex;
+.navItem.resume i {
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+
+    transform: translateY(7px);
 }
 
 
@@ -230,7 +240,7 @@ p{
 
 
 .dropdown-content a {   
-    padding: 12px 0px 12px 46px;
+    padding: 12px 0px 12px 46px !important;
 }
 
 .dropdown-content a:first-child{   
@@ -239,11 +249,6 @@ p{
 
 .dropdown-content a:last-child{   
     margin-bottom: 17px;
-}
-  
-.dropdown-content a:hover {
-    background-color: rgba(2, 14, 39, 0.6);
-    border-radius: 0px 0px 10px 10px;
 }
 
 .aHover{

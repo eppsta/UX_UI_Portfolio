@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Titillium+Web:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Portfolio</title>
@@ -20,7 +20,7 @@
         <nav class = "flexnav" id = "nav">
             <div class = "menuItems">
                 <div class = "logoHome">
-                    <a class = "selection" href = "/UX_UI_Portfolio/index.html">Lucas Epperson</a>
+                    <a class = "selection" href = "/UX_UI_Portfolio">Lucas Epperson</a>
                 </div>
 
                 <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
@@ -64,8 +64,14 @@
                 Crafting solutions based on <strong>evidence</strong>.
             </p>
 
-            <button onclick = "scrollProjects()" class = "heroButton projectButton">View Projects</button>
+            <div onclick = "scrollProjects()" class = "heroButton">
+                <p class = "heroButton-text">View Projects</p>
+                <img src = "/UX_UI_Portfolio/Images/custombutton.svg"></img>
+
+            </div>
             
+            
+
         </div>
     </section>
 
@@ -108,13 +114,13 @@
             <div class = "projectCard sendsmartCard">
                 <div class = "projectCard-content">
                     <div class = "projectInfo sendsmartInfo">
-                        <h2 class = "projectName">SendSmart</h2>
-                        <h3 class = "projectSubHead">Message Detection | Web App</h3>
+                        <h3 class = "projectName">SendSmart</h3>
+                        <h4 class = "projectSubHead">Message Detection | Web App</h4>
                         <p class = "projectDescription">The objective was to increase dealership representatives’ sensitivity toward detecting their customer messages by implementing personalized features and identifiers into the existing design.</p>
 
-                        <div class = "projectCard-button">
-                            <a href = "/UX_UI_Portfolio/sendsmartCaseStudy.html"><button class = "projectButton">View Project</button></a>
-                        </div>
+                        
+                        <a class= "projectCard-buttonPosition" href = "/UX_UI_Portfolio/sendsmartCaseStudy.html"><button class = "projectButton projectCard-button sendsmartButton">View Project</button></a>
+                       
                     </div>
  
                     <div class = "projectIMG sendsmartIMG"> 
@@ -131,13 +137,13 @@
                     </div>
 
                     <div class = "projectInfo hboInfo">
-                        <h2 class = "projectName">HBO Max</h2>
-                        <h3 class = "projectSubHead">User Flow | TV App</h3>
+                        <h3 class = "projectName">HBO Max</h2>
+                        <h4 class = "projectSubHead">User Flow | TV App</h4>
                         <p class = "projectDescription">The goal was to improve the user flow for viewers by affording them access to related episodes of a TV show after having selected a show to watch under “Continue Watching”.</p>
 
-                        <div class = "projectCard-button">
-                            <a href = "/UX_UI_Portfolio/hboCaseStudy.html"><button class = "projectButton">View Project</button></a>
-                        </div>
+                       
+                        <a class= "projectCard-buttonPosition" href = "/UX_UI_Portfolio/hboCaseStudy.html"><button class = "projectButton projectCard-button hboButton">View Project</button></a>
+                        
                     </div>
                 </div>
                 

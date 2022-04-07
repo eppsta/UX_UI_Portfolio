@@ -322,7 +322,7 @@ p2{
 .projectButton{
     padding: 12px 29px;
     font-size: 14px;
-    border-radius: 20px;;
+    border-radius: 20px;
 }
 
 .projects{
@@ -352,7 +352,11 @@ p2{
 
 .projectInfo{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
+
 
 .projectSubHead{
     margin-top: -4px;
@@ -364,9 +368,14 @@ p2{
 }
 
 .projectCard-button{
-    text-align: center;
     margin-top: 37px;
 }
+
+.projectCard-buttonPosition{
+    text-align: center;
+}
+
+
 
 
 

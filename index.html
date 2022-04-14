@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 939px)" href= "CSS/mobile_style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 939px)" href= "css/mobile_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,24 +26,20 @@
                 <div class = "navIcon" id = "navIcon" onclick = "open_navMenu() ; animate_navIcon()">
                     <div class="navIcon_burger"></div>
                 </div>
-               
-                
+                 
                 <div class = "navMenu" id = "navMenu">
                     <div class = "navItem proj" onclick = "open_dropdownContent() ; reverse_arrow()">
                         <a class = "navItem-projects">Projects <i class="fa-solid fa-caret-down" id = "caret"></i></a>
                         <div class="dropdown-content" id = "dropdown-content">
-                            <a href="sendsmartCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">SendSmart</a>
-                            <a href="hboCaseStudy.html" onclick = "open_navMenu() ; animate_navIcon()">HBO Max</a>
+                            <a href="sendsmart-project.html" onclick = "open_navMenu() ; animate_navIcon()">SendSmart</a>
+                            <a href="hbomax-project.html" onclick = "open_navMenu() ; animate_navIcon()">HBO Max</a>
                         </div>
                     </div>
 
-                    <div class = "navItem resume"><a href = "PDFs/Resume.pdf" target = "_blank">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div> 
+                    <div class = "navItem resume"><a href = "resume.pdf" target = "_blank">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div> 
                     <div class = "navItem about"><a href = "about.html">About</a></div>
                     
-                </div>
-              
-               
-                
+                </div>        
 
             </div>
                      
@@ -66,7 +62,7 @@
 
             <div onclick = "scrollProjects()" class = "heroButton">
                 <p class = "heroButton-text">View Projects</p>
-                <img src = "Images/custombutton.svg"></img>
+                <img src = "images/custombutton.svg"></img>
 
             </div>
             
@@ -119,12 +115,12 @@
                         <p class = "projectDescription">The objective was to increase dealership representatives’ sensitivity toward detecting their customer messages by implementing personalized features and identifiers into the existing design.</p>
 
                         
-                        <a class= "projectCard-buttonPosition" href = "sendsmartCaseStudy.html"><button class = "projectButton projectCard-button sendsmartButton">View Project</button></a>
+                        <a class= "projectCard-buttonPosition" href = "project-sendsmart.html"><button class = "projectButton projectCard-button sendsmartButton">View Project</button></a>
                        
                     </div>
  
                     <div class = "projectIMG sendsmartIMG"> 
-                        <img class = "sendsmart-img" src = "Images/SendSmart/SendSmart - SSlogo.png" width = 495px>
+                        <img class = "sendsmart-img" src = "images/SendSmart/SendSmart - SSlogo.png" width = 495px>
                     </div>
                 </div>
                 
@@ -133,7 +129,7 @@
             <div class = "projectCard hboCard">
                 <div class = "projectCard-content">
                     <div class = "projectIMG hboIMG"> 
-                        <img class = "hbo-img" src = "Images/HBO Max/HBO Max - TV Logo.png" width = 495px>
+                        <img class = "hbo-img" src = "images/HBO Max/HBO Max - TV Logo.png" width = 495px>
                     </div>
 
                     <div class = "projectInfo hboInfo">
@@ -142,7 +138,7 @@
                         <p class = "projectDescription">The goal was to improve the user flow for viewers by affording them access to related episodes of a TV show after having selected a show to watch under “Continue Watching”.</p>
 
                        
-                        <a class= "projectCard-buttonPosition" href = "hboCaseStudy.html"><button class = "projectButton projectCard-button hboButton">View Project</button></a>
+                        <a class= "projectCard-buttonPosition" href = "hbomax-project.html"><button class = "projectButton projectCard-button hboButton">View Project</button></a>
                         
                     </div>
                 </div>
@@ -165,10 +161,10 @@
         
         <div class = "footer-iconsContainer">
             <div class = "footer-icons">
-                <a href = "mailto:lucas.m.epperson@gmail.com"><img class = "mail" src="Icons/mail.png" width = 60px></a>
+                <a href = "mailto:lucas.m.epperson@gmail.com"><img class = "mail" src="icons/mail.png" width = 60px></a>
             </div>
             <div class = "footer-icons">
-                <a href = "https://www.linkedin.com/in/lucas-epperson-ba06125b"><img class = "linkedin" src="Icons/linkedin.png" width = 48px></a>
+                <a href = "https://www.linkedin.com/in/lucas-epperson-ba06125b"><img class = "linkedin" src="icons/linkedin.png" width = 48px></a>
             </div>
         </div>
 
@@ -183,8 +179,8 @@
 
 
         
-    <script src = "JavaScript/index.js"></script>
-    
+    <script src = "javascript/index.js"></script>
+
 
 </body>
 </html>

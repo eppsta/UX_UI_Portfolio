@@ -309,6 +309,7 @@ a.selection {
 
     background-color: #344465;
     color: white;
+
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -564,6 +565,7 @@ footer{
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .aboutTitle{
@@ -576,6 +578,7 @@ footer{
     max-width: 960px;
 
     color: white;
+    
 
     margin-top: 100px;
     margin-bottom: 200px;
